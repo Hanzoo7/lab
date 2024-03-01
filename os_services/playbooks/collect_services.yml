@@ -1,0 +1,15 @@
+---
+- name: Check Services Status
+  hosts: linux
+  gather_facts: true
+  tasks:
+    - name: Get the status of all services
+      service_facts:
+      register: services
+
+    - name: Display service status
+      debug:
+        var: services
+
+
+
