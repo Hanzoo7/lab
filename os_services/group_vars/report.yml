@@ -1,1 +1,1 @@
-file: ../files/services.yaml
+file: ../group_vars/services.yml
