@@ -1,0 +1,19 @@
+---
+- hosts: linux
+  gather_facts: true
+  become: true
+  
+  tasks:
+    - name: include vars
+      include_vars:
+        file: ../group_vars/services.yml
+        name: inventory
+
+    - name: ensure services
+      service:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+        enabled: "{{ item.enabled }}"
+      loop: "{{ inventory[inventory_hostname]['services'].values() }}"
+
+    
