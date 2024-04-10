@@ -15,5 +15,5 @@
         state: "{{ item.state }}"
         enabled: "{{ item.enabled }}"
       loop: "{{ inventory[inventory_hostname]['services'].values() }}"
-
+      when: item.get('enabled', None) is not none and item.get('state', None) is not none
     

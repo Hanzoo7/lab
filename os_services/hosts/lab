@@ -1,3 +1,6 @@
 [linux]
 ubuntuLab ansible_host=10.0.4.4
-ubuntuLabCopy ansible_host=10.0.4.4
+
+[windows]
+W2019-1 ansible_host=10.0.4.6
+

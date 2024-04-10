@@ -1,16 +1,19 @@
 rules:
     change status enabled to enabled true:
-      regexp: '^\s{6}.*status:\senabled'
+      regexp: '^\s{6}.*status:\senabled$'
       replace: "      enabled: true"
     change status disabled to enabled false:
-      regexp: '^\s{6}.*status:\sdisabled'
+      regexp: '^\s{6}.*status:\sdisabled$'
       replace: "      enabled: false"
-    change status undefined to none:
+    remove others status:
       regexp: '^\s{6}.*status:\s\w*$'
-      replace: "      enabled: null"
+      replace: ""
     change state running to started:
-      regexp: '^\s{6}.*state:\srunning'
+      regexp: '^\s{6}.*state:\srunning$'
       replace: "      state: started"
     change state inactive to stopped:
-      regexp: '^\s{6}.*state:\sinactive'
+      regexp: '^\s{6}.*state:\sinactive$'
       replace: "      state: stopped"
+    remove others states:
+      regexp: '^\s{6}.*state:\s(unknown|)$'
+      replace: ""
