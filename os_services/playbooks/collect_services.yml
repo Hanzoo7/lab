@@ -15,7 +15,7 @@
       register: services_list
 
     - include_role:
-        name: formatToYaml
+        name: registerToYaml
       vars:
         insert: "{{ services_list['ansible_facts']['services']}}"
         node: "{{ inventory_hostname }}/services"

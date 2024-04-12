@@ -1,0 +1,23 @@
+---
+- hosts: windows
+  gather_facts: true
+  
+  collections:
+  - ansible.windows
+  
+  vars_files:
+    - ../vaults/windows
+
+  tasks:
+    - name: include vars
+      include_vars:
+        file: ../group_vars/services.yml
+        name: inventory
+
+    - name: ensure services
+      win_service:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+        start_mode: "{{ item.start_mode }}"
+      loop: "{{ inventory[inventory_hostname]['services'] }}"
+    

@@ -24,7 +24,7 @@
 
   tasks:
     - include_role:
-        name: formatToYaml
+        name: registerToYaml
       
       vars:
         insert: "{{ item.value.services_list.services }}"
