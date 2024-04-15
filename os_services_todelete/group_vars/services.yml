@@ -34,7 +34,7 @@ W2019-1:
     service_type: win32_share_process
     sid_info: unrestricted
     start_mode: manual
-    state: started
+    state: stopped
     triggers:
     - action: start_service
       data_items:
@@ -137,9 +137,7 @@ W2019-1:
     wait_hint_ms: 0
     win32_exit_code: 1077
   - checkpoint: 0
-    controls_accepted:
-    - stop
-    - session_change
+    controls_accepted: []
     dependencies:
     - RpcSs
     - ProfSvc
@@ -168,7 +166,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 5244
+    process_id: 0
     required_privileges:
     - SeAssignPrimaryTokenPrivilege
     - SeIncreaseQuotaPrivilege
@@ -186,7 +184,7 @@ W2019-1:
     service_type: win32_share_process
     sid_info: none
     start_mode: manual
-    state: started
+    state: stopped
     triggers:
     - action: start_service
       data_items:
@@ -225,7 +223,7 @@ W2019-1:
       type: network_endpoint
     username: AUTORITE NT\Système
     wait_hint_ms: 0
-    win32_exit_code: 0
+    win32_exit_code: 1077
   - checkpoint: 0
     controls_accepted: []
     dependencies: []
@@ -345,10 +343,7 @@ W2019-1:
     wait_hint_ms: 0
     win32_exit_code: 1077
   - checkpoint: 0
-    controls_accepted:
-    - stop
-    - shutdown
-    - session_change
+    controls_accepted: []
     dependencies:
     - rpcss
     - staterepository
@@ -377,7 +372,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k wsappx -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 4400
+    process_id: 0
     required_privileges:
     - SeTcbPrivilege
     - SeIncreaseBasePriorityPrivilege
@@ -396,7 +391,7 @@ W2019-1:
     service_type: win32_share_process
     sid_info: unrestricted
     start_mode: manual
-    state: started
+    state: stopped
     triggers: []
     username: AUTORITE NT\Système
     wait_hint_ms: 0
@@ -578,7 +573,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2104
+    process_id: 2084
     required_privileges:
     - SeAuditPrivilege
     service_exit_code: 0
@@ -670,7 +665,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k DcomLaunch -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 820
+    process_id: 836
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -889,79 +884,7 @@ W2019-1:
     triggers: []
     username: AUTORITE NT\Système
     wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
-    controls_accepted: []
-    dependencies: []
-    dependency_of: []
-    description: Service de Capture OneCore
-    desktop_interact: false
-    display_name: CaptureService_35158
-    error_control: normal
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: CaptureService_35158
-    path: C:\Windows\system32\svchost.exe -k LocalService -p
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: manual
-    state: stopped
-    triggers: []
-    username: null
-    wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
-    controls_accepted: []
-    dependencies: []
-    dependency_of: []
-    description: Ce service utilisateur est utilisé pour les scénarios du Presse-papiers
-    desktop_interact: false
-    display_name: Service utilisateur du Presse-papiers_35158
-    error_control: normal
-    failure_actions:
-    - delay_ms: 3000
-      type: restart
-    - delay_ms: 3000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: cbdhsvc_35158
-    path: C:\Windows\system32\svchost.exe -k ClipboardSvcGroup -p
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: manual
-    state: stopped
-    triggers: []
-    username: null
-    wait_hint_ms: 0
-    win32_exit_code: 1077
+    win32_exit_code: 0
   - checkpoint: 0
     controls_accepted:
     - stop
@@ -993,7 +916,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 4344
+    process_id: 2676
     required_privileges:
     - SeImpersonatePrivilege
     service_exit_code: 0
@@ -1009,47 +932,6 @@ W2019-1:
       sub_type_guid: a086ff1e-d6dc-45f7-b3e4-6cd5c9fdd6d7
       type: {}
     username: NT AUTHORITY\LocalService
-    wait_hint_ms: 0
-    win32_exit_code: 0
-  - checkpoint: 0
-    controls_accepted:
-    - stop
-    - power_event
-    - session_change
-    dependencies: []
-    dependency_of: []
-    description: Ce service utilisateur entre dans le cadre de scénarios de plateforme
-      d’appareils connectés
-    desktop_interact: false
-    display_name: Service pour utilisateur de plateforme d’appareils connectés_35158
-    error_control: normal
-    failure_actions:
-    - delay_ms: 3000
-      type: restart
-    - delay_ms: 3000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: CDPUserSvc_35158
-    path: C:\Windows\system32\svchost.exe -k UnistackSvcGroup
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 3008
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: auto
-    state: started
-    triggers: []
-    username: null
     wait_hint_ms: 0
     win32_exit_code: 0
   - checkpoint: 0
@@ -1203,7 +1085,7 @@ W2019-1:
       type: {}
     username: AUTORITE NT\Système
     wait_hint_ms: 0
-    win32_exit_code: 1077
+    win32_exit_code: 0
   - checkpoint: 0
     controls_accepted: []
     dependencies:
@@ -1256,42 +1138,6 @@ W2019-1:
     win32_exit_code: 1077
   - checkpoint: 0
     controls_accepted: []
-    dependencies: []
-    dependency_of: []
-    description: Permet à ConnectUX et aux Paramètres du PC de se connecter et d'effectuer
-      le couplage avec affichages Wi-Fi et les appareils Bluetooth.
-    desktop_interact: false
-    display_name: ConsentUX_35158
-    error_control: normal
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: ConsentUxUserSvc_35158
-    path: C:\Windows\system32\svchost.exe -k DevicesFlow
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: manual
-    state: stopped
-    triggers: []
-    username: null
-    wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
-    controls_accepted: []
     dependencies:
     - rpcss
     dependency_of: []
@@ -1312,7 +1158,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1148
+    process_id: 1288
     required_privileges: []
     service_exit_code: 0
     service_flags: []
@@ -1363,7 +1209,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k NetworkService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2664
+    process_id: 2592
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -1436,11 +1282,6 @@ W2019-1:
     - session_change
     dependencies: []
     dependency_of:
-    - PrintWorkflowUserSvc_35158
-    - DevicesFlowUserSvc_35158
-    - DevicePickerUserSvc_35158
-    - ConsentUxUserSvc_35158
-    - CaptureService_35158
     - wuauserv
     - WMPNetworkSvc
     - WSearch
@@ -1596,7 +1437,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k DcomLaunch -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 820
+    process_id: 836
     required_privileges:
     - SeAssignPrimaryTokenPrivilege
     - SeAuditPrivilege
@@ -1801,77 +1642,6 @@ W2019-1:
     controls_accepted: []
     dependencies: []
     dependency_of: []
-    description: Ce service utilisateur permet de gérer l'IU Miracast, DLNA et DIAL
-    desktop_interact: false
-    display_name: DevicePicker_35158
-    error_control: normal
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: DevicePickerUserSvc_35158
-    path: C:\Windows\system32\svchost.exe -k DevicesFlow
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: disabled
-    state: stopped
-    triggers: []
-    username: null
-    wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
-    controls_accepted: []
-    dependencies: []
-    dependency_of: []
-    description: Permet à ConnectUX et aux Paramètres du PC de se connecter et d'effectuer
-      le couplage avec affichages Wi-Fi et les appareils Bluetooth.
-    desktop_interact: false
-    display_name: Flux d’appareils_35158
-    error_control: normal
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: DevicesFlowUserSvc_35158
-    path: C:\Windows\system32\svchost.exe -k DevicesFlow
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: manual
-    state: stopped
-    triggers: []
-    username: null
-    wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
-    controls_accepted: []
-    dependencies: []
-    dependency_of: []
     description: Permet aux applications de découvrir les périphériques avec une tâche
       en arrière-plan
     desktop_interact: false
@@ -1956,7 +1726,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1384
+    process_id: 1352
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -2039,7 +1809,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k utcsvc -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2632
+    process_id: 2584
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -2214,7 +1984,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k NetworkService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1552
+    process_id: 1712
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -2286,7 +2056,7 @@ W2019-1:
       type: group_policy
     username: NT Authority\NetworkService
     wait_hint_ms: 0
-    win32_exit_code: 1077
+    win32_exit_code: 0
   - checkpoint: 0
     controls_accepted: []
     dependencies:
@@ -2366,7 +2136,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k LocalServiceNoNetwork -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2996
+    process_id: 2020
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -2383,9 +2153,7 @@ W2019-1:
     wait_hint_ms: 0
     win32_exit_code: 0
   - checkpoint: 0
-    controls_accepted:
-    - stop
-    - shutdown
+    controls_accepted: []
     dependencies:
     - RpcSs
     dependency_of: []
@@ -2412,7 +2180,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 748
+    process_id: 0
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -2426,7 +2194,7 @@ W2019-1:
     service_type: win32_share_process
     sid_info: unrestricted
     start_mode: manual
-    state: started
+    state: stopped
     triggers:
     - action: start_service
       data_items:
@@ -2727,7 +2495,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1112
+    process_id: 1184
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -2776,7 +2544,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1616
+    process_id: 1608
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -2828,7 +2596,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2388
+    process_id: 2348
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -2876,7 +2644,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2512
+    process_id: 2492
     required_privileges:
     - SeChangeNotifyPrivilege
     service_exit_code: 0
@@ -2926,7 +2694,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1212
+    process_id: 1328
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeAuditPrivilege
@@ -3040,7 +2808,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 900000
     preferred_node: null
-    process_id: 1360
+    process_id: 1336
     required_privileges:
     - SeImpersonatePrivilege
     - SeTcbPrivilege
@@ -3299,7 +3067,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2656
+    process_id: 2600
     required_privileges:
     - SeAuditPrivilege
     - SeImpersonatePrivilege
@@ -3401,7 +3169,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k NetSvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2944
+    process_id: 2900
     required_privileges:
     - SeCreateGlobalPrivilege
     - SeImpersonatePrivilege
@@ -3444,7 +3212,7 @@ W2019-1:
     path: C:\Windows\system32\lsass.exe
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 660
+    process_id: 668
     required_privileges: []
     service_exit_code: 0
     service_flags:
@@ -3593,7 +3361,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k smbsvcs
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2912
+    process_id: 2816
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -3658,7 +3426,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k NetworkService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2172
+    process_id: 2152
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -3869,7 +3637,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1076
+    process_id: 1032
     required_privileges:
     - SeCreateGlobalPrivilege
     service_exit_code: 0
@@ -3921,7 +3689,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k DcomLaunch -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 980
+    process_id: 1000
     required_privileges: []
     service_exit_code: 0
     service_flags: []
@@ -3998,7 +3766,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2104
+    process_id: 2084
     required_privileges:
     - SeAssignPrimaryTokenPrivilege
     - SeAuditPrivilege
@@ -4049,7 +3817,7 @@ W2019-1:
     path: C:\Windows\System32\msdtc.exe
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2112
+    process_id: 2464
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -4261,7 +4029,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 948
+    process_id: 84
     required_privileges:
     - SeCreateGlobalPrivilege
     - SeImpersonatePrivilege
@@ -4425,7 +4193,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k LocalService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1788
+    process_id: 1784
     required_privileges:
     - SeImpersonatePrivilege
     - SeChangeNotifyPrivilege
@@ -4770,7 +4538,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k NetworkService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1504
+    process_id: 1492
     required_privileges:
     - SeCreateGlobalPrivilege
     - SeImpersonatePrivilege
@@ -4835,7 +4603,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1336
+    process_id: 1304
     required_privileges:
     - SeCreateGlobalPrivilege
     - SeImpersonatePrivilege
@@ -4994,47 +4762,6 @@ W2019-1:
     win32_exit_code: 1077
   - checkpoint: 0
     controls_accepted: []
-    dependencies: []
-    dependency_of: []
-    description: Indexe les données de contacts pour une recherche des contacts plus
-      rapide. Si vous arrêtez ou désactivez ce service, des contacts risquent de manquer
-      dans vos résultats de recherche.
-    desktop_interact: false
-    display_name: Données de contacts_35158
-    error_control: ignore
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: PimIndexMaintenanceSvc_35158
-    path: C:\Windows\system32\svchost.exe -k UnistackSvcGroup
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: manual
-    state: stopped
-    triggers: []
-    username: null
-    wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
-    controls_accepted: []
     dependencies:
     - RPCSS
     dependency_of: []
@@ -5102,7 +4829,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k DcomLaunch -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 796
+    process_id: 808
     required_privileges: []
     service_exit_code: 0
     service_flags: []
@@ -5151,7 +4878,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k NetworkServiceNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 3132
+    process_id: 3380
     required_privileges:
     - SeAuditPrivilege
     - SeChangeNotifyPrivilege
@@ -5204,7 +4931,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k DcomLaunch -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 820
+    process_id: 836
     required_privileges:
     - SeTcbPrivilege
     - SeSecurityPrivilege
@@ -5238,7 +4965,7 @@ W2019-1:
       et gère les notifications d’une imprimante ou d’un serveur d’impression distant.
       Si vous désactivez ce service, vous ne pourrez plus voir les extensions ou notifications
       relatives aux imprimantes.
-    desktop_interact: true
+    desktop_interact: false
     display_name: Extensions et notifications des imprimantes
     error_control: normal
     failure_actions: []
@@ -5262,41 +4989,6 @@ W2019-1:
     state: stopped
     triggers: []
     username: AUTORITE NT\Système
-    wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
-    controls_accepted: []
-    dependencies: []
-    dependency_of: []
-    description: Workflow d’impression
-    desktop_interact: false
-    display_name: PrintWorkflow_35158
-    error_control: normal
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: PrintWorkflowUserSvc_35158
-    path: C:\Windows\system32\svchost.exe -k PrintWorkflow
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: manual
-    state: stopped
-    triggers: []
-    username: null
     wait_hint_ms: 0
     win32_exit_code: 1077
   - checkpoint: 0
@@ -5335,7 +5027,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1604
+    process_id: 1616
     required_privileges:
     - SeBackupPrivilege
     - SeRestorePrivilege
@@ -5531,7 +5223,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k netsvcs
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 3056
+    process_id: 3092
     required_privileges:
     - SeImpersonatePrivilege
     - SeIncreaseQuotaPrivilege
@@ -5628,7 +5320,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k localService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2692
+    process_id: 2668
     required_privileges:
     - SeCreateGlobalPrivilege
     - SeImpersonatePrivilege
@@ -5687,11 +5379,6 @@ W2019-1:
     dependency_of:
     - Schedule
     - SystemEventsBroker
-    - PrintWorkflowUserSvc_35158
-    - DevicesFlowUserSvc_35158
-    - DevicePickerUserSvc_35158
-    - ConsentUxUserSvc_35158
-    - CaptureService_35158
     - wuauserv
     - WMPNetworkSvc
     - WSearch
@@ -5848,7 +5535,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k RPCSS -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 928
+    process_id: 956
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -5913,11 +5600,6 @@ W2019-1:
     - RpcEptMapper
     - DcomLaunch
     dependency_of:
-    - PrintWorkflowUserSvc_35158
-    - DevicesFlowUserSvc_35158
-    - DevicePickerUserSvc_35158
-    - ConsentUxUserSvc_35158
-    - CaptureService_35158
     - wuauserv
     - WMPNetworkSvc
     - WSearch
@@ -6074,7 +5756,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k rpcss -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 928
+    process_id: 956
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -6195,7 +5877,7 @@ W2019-1:
     path: C:\Windows\system32\lsass.exe
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 660
+    process_id: 668
     required_privileges: []
     service_exit_code: 0
     service_flags:
@@ -6370,7 +6052,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1464
+    process_id: 1408
     required_privileges:
     - SeIncreaseQuotaPrivilege
     - SeChangeNotifyPrivilege
@@ -6636,7 +6318,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1756
+    process_id: 1768
     required_privileges:
     - SeAuditPrivilege
     - SeChangeNotifyPrivilege
@@ -7055,7 +6737,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1992
+    process_id: 1984
     required_privileges:
     - SeImpersonatePrivilege
     - SeSystemEnvironmentPrivilege
@@ -7191,7 +6873,7 @@ W2019-1:
     description: Ce service met en spoule les travaux d’impression et gère l’interaction
       avec l’imprimante. Si vous arrêtez ce service, vous ne pourrez plus imprimer
       ni voir vos imprimantes.
-    desktop_interact: true
+    desktop_interact: false
     display_name: Spouleur d’impression
     error_control: normal
     failure_actions:
@@ -7211,7 +6893,7 @@ W2019-1:
     path: C:\Windows\System32\spoolsv.exe
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2544
+    process_id: 2524
     required_privileges:
     - SeTcbPrivilege
     - SeImpersonatePrivilege
@@ -7397,7 +7079,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2700
+    process_id: 2656
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -7442,7 +7124,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k appmodel -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 4200
+    process_id: 3404
     required_privileges:
     - SeTcbPrivilege
     - SeIncreaseBasePriorityPrivilege
@@ -7527,7 +7209,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 0
+    process_id: 1236
     required_privileges:
     - SeLoadDriverPrivilege
     - SeBackupPrivilege
@@ -7538,7 +7220,7 @@ W2019-1:
     service_type: win32_share_process
     sid_info: unrestricted
     start_mode: manual
-    state: stopped
+    state: started
     triggers:
     - action: start_service
       data_items: []
@@ -7561,7 +7243,7 @@ W2019-1:
       type: network_endpoint
     username: AUTORITE NT\Système
     wait_hint_ms: 0
-    win32_exit_code: 1077
+    win32_exit_code: 0
   - checkpoint: 0
     controls_accepted: []
     dependencies: []
@@ -7683,7 +7365,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2716
+    process_id: 2688
     required_privileges:
     - SeTcbPrivilege
     - SeProfileSingleProcessPrivilege
@@ -7731,7 +7413,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k DcomLaunch -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 820
+    process_id: 836
     required_privileges:
     - SeCreateGlobalPrivilege
     - SeImpersonatePrivilege
@@ -7762,8 +7444,7 @@ W2019-1:
     wait_hint_ms: 0
     win32_exit_code: 0
   - checkpoint: 0
-    controls_accepted:
-    - session_change
+    controls_accepted: []
     dependencies:
     - RpcSs
     dependency_of: []
@@ -7789,7 +7470,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 4232
+    process_id: 0
     required_privileges:
     - SeTcbPrivilege
     - SeImpersonatePrivilege
@@ -7801,7 +7482,7 @@ W2019-1:
     service_type: win32_share_process
     sid_info: unrestricted
     start_mode: manual
-    state: started
+    state: stopped
     triggers:
     - action: start_service
       data_items:
@@ -7818,7 +7499,7 @@ W2019-1:
       type: device_interface_arrival
     username: AUTORITE NT\Système
     wait_hint_ms: 0
-    win32_exit_code: 0
+    win32_exit_code: 1077
   - checkpoint: 0
     controls_accepted: []
     dependencies:
@@ -7940,7 +7621,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1632
+    process_id: 1636
     required_privileges:
     - SeAssignPrimaryTokenPrivilege
     - SeDebugPrivilege
@@ -8020,7 +7701,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1084
+    process_id: 1040
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -8056,8 +7737,7 @@ W2019-1:
     wait_hint_ms: 0
     win32_exit_code: 0
   - checkpoint: 0
-    controls_accepted:
-    - stop
+    controls_accepted: []
     dependencies:
     - UserManager
     dependency_of: []
@@ -8077,7 +7757,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 456
+    process_id: 0
     required_privileges:
     - SeTcbPrivilege
     - SeAssignPrimaryTokenPrivilege
@@ -8088,11 +7768,11 @@ W2019-1:
     service_type: win32_share_process
     sid_info: none
     start_mode: manual
-    state: started
+    state: stopped
     triggers: []
     username: AUTORITE NT\Système
     wait_hint_ms: 0
-    win32_exit_code: 0
+    win32_exit_code: 1077
   - checkpoint: 0
     controls_accepted:
     - stop
@@ -8122,7 +7802,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2708
+    process_id: 2712
     required_privileges:
     - SeRestorePrivilege
     - SeImpersonatePrivilege
@@ -8174,7 +7854,7 @@ W2019-1:
     triggers: []
     username: localSystem
     wait_hint_ms: 0
-    win32_exit_code: 1077
+    win32_exit_code: 0
   - checkpoint: 0
     controls_accepted: []
     dependencies: []
@@ -8286,7 +7966,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 4708
+    process_id: 2684
     required_privileges: []
     service_exit_code: 0
     service_flags: []
@@ -8383,50 +8063,6 @@ W2019-1:
     win32_exit_code: 1077
   - checkpoint: 0
     controls_accepted: []
-    dependencies: []
-    dependency_of:
-    - UserDataSvc_35158
-    - PimIndexMaintenanceSvc_35158
-    description: Gère le stockage des données utilisateur structurées, notamment les
-      coordonnées, les calendriers, les messages et d’autres éléments de contenu.
-      Si vous arrêtez ou désactivez ce service, les applications qui utilisent ces
-      données risquent de ne pas fonctionner correctement.
-    desktop_interact: false
-    display_name: Stockage des données utilisateur_35158
-    error_control: ignore
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: UnistoreSvc_35158
-    path: C:\Windows\System32\svchost.exe -k UnistackSvcGroup
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: manual
-    state: stopped
-    triggers: []
-    username: null
-    wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
-    controls_accepted: []
     dependencies:
     - SSDPSRV
     - HTTP
@@ -8471,48 +8107,6 @@ W2019-1:
     wait_hint_ms: 0
     win32_exit_code: 1077
   - checkpoint: 0
-    controls_accepted: []
-    dependencies: []
-    dependency_of: []
-    description: Fournit l’accès des applications aux données utilisateur structurées,
-      notamment aux coordonnées, calendriers, messages et autres éléments de contenu.
-      Si vous arrêtez ou désactivez ce service, les applications qui utilisent ces
-      données risquent de ne pas fonctionner correctement.
-    desktop_interact: false
-    display_name: Accès aux données utilisateur_35158
-    error_control: ignore
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: UserDataSvc_35158
-    path: C:\Windows\system32\svchost.exe -k UnistackSvcGroup
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 0
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: manual
-    state: stopped
-    triggers: []
-    username: null
-    wait_hint_ms: 0
-    win32_exit_code: 1077
-  - checkpoint: 0
     controls_accepted:
     - stop
     dependencies:
@@ -8537,7 +8131,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2028
+    process_id: 1972
     required_privileges:
     - SeTcbPrivilege
     - SeImpersonatePrivilege
@@ -8595,7 +8189,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 3600000
     preferred_node: null
-    process_id: 5668
+    process_id: 2004
     required_privileges:
     - SeCreateGlobalPrivilege
     - SeShutdownPrivilege
@@ -8676,7 +8270,7 @@ W2019-1:
     path: C:\Windows\System32\VBoxService.exe
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1404
+    process_id: 1500
     required_privileges: []
     service_exit_code: 0
     service_flags: []
@@ -9147,7 +8741,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalService
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2728
+    process_id: 2740
     required_privileges:
     - SeAuditPrivilege
     - SeChangeNotifyPrivilege
@@ -9212,7 +8806,7 @@ W2019-1:
     triggers: []
     username: AUTORITE NT\Système
     wait_hint_ms: 0
-    win32_exit_code: 1077
+    win32_exit_code: 0
   - checkpoint: 0
     controls_accepted: []
     dependencies: []
@@ -9393,7 +8987,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 1920
+    process_id: 1924
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -9533,7 +9127,7 @@ W2019-1:
     path: '"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.24030.9-0\NisSrv.exe"'
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 3828
+    process_id: 4012
     required_privileges: []
     service_exit_code: 0
     service_flags: []
@@ -9794,7 +9388,7 @@ W2019-1:
     path: '"C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.24030.9-0\MsMpEng.exe"'
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2844
+    process_id: 2788
     required_privileges:
     - SeImpersonatePrivilege
     - SeBackupPrivilege
@@ -9855,7 +9449,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2148
+    process_id: 2224
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeCreateGlobalPrivilege
@@ -9906,7 +9500,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2684
+    process_id: 2608
     required_privileges: []
     service_exit_code: 0
     service_flags: []
@@ -9959,7 +9553,7 @@ W2019-1:
     path: C:\Windows\System32\svchost.exe -k NetworkService -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2792
+    process_id: 2800
     required_privileges:
     - SeAssignPrimaryTokenPrivilege
     - SeAuditPrivilege
@@ -10023,9 +9617,7 @@ W2019-1:
     wait_hint_ms: 0
     win32_exit_code: 1077
   - checkpoint: 0
-    controls_accepted:
-    - stop
-    - session_change
+    controls_accepted: []
     dependencies:
     - RpcSs
     dependency_of: []
@@ -10052,7 +9644,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 5172
+    process_id: 0
     required_privileges:
     - SeCreateGlobalPrivilege
     - SeImpersonatePrivilege
@@ -10064,7 +9656,7 @@ W2019-1:
     service_type: win32_share_process
     sid_info: unrestricted
     start_mode: manual
-    state: started
+    state: stopped
     triggers:
     - action: start_service
       data_items:
@@ -10344,7 +9936,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 2812
+    process_id: 2824
     required_privileges:
     - SeChangeNotifyPrivilege
     - SeImpersonatePrivilege
@@ -10358,47 +9950,6 @@ W2019-1:
     state: started
     triggers: []
     username: AUTORITE NT\Système
-    wait_hint_ms: 0
-    win32_exit_code: 0
-  - checkpoint: 0
-    controls_accepted: []
-    dependencies: []
-    dependency_of: []
-    description: Ce service héberge la plateforme de notification Windows qui fournit
-      la prise en charge des notifications locales et Push. Les notifications prises
-      en charge sont tile, toast et raw.
-    desktop_interact: false
-    display_name: Service utilisateur de notifications Push Windows_35158
-    error_control: ignore
-    failure_actions:
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 10000
-      type: restart
-    - delay_ms: 0
-      type: none
-    failure_actions_on_non_crash_failure: false
-    failure_command: null
-    failure_reboot_msg: null
-    failure_reset_period_sec: 86400
-    launch_protection: none
-    load_order_group: ''
-    name: WpnUserService_35158
-    path: C:\Windows\system32\svchost.exe -k UnistackSvcGroup
-    pre_shutdown_timeout_ms: 10000
-    preferred_node: null
-    process_id: 3980
-    required_privileges: []
-    service_exit_code: 0
-    service_flags: []
-    service_type: user_share_process
-    sid_info: none
-    start_mode: auto
-    state: started
-    triggers: []
-    username: null
     wait_hint_ms: 0
     win32_exit_code: 0
   - checkpoint: 0
@@ -10489,7 +10040,7 @@ W2019-1:
     path: C:\Windows\system32\svchost.exe -k netsvcs -p
     pre_shutdown_timeout_ms: 10000
     preferred_node: null
-    process_id: 5136
+    process_id: 2248
     required_privileges:
     - SeAuditPrivilege
     - SeCreateGlobalPrivilege

@@ -1,0 +1,16 @@
+---
+- hosts: windows
+  gather_facts: false
+  serial: 1
+
+  collections:
+    - hanzoo7.reporting
+  
+  vars_files:
+    - ../vaults/windows
+    - ../group_vars/hostConfigDirectory.yml
+
+  tasks:
+    - include_role:
+        name: windowsServerGetConfig
+        
