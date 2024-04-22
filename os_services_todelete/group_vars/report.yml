@@ -1,4 +1,0 @@
-path: ../group_vars/services.yml
-pattern: ../files/pattern.yml
-do_backup: false
-
