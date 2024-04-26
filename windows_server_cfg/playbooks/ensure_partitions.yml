@@ -11,13 +11,15 @@
     - name: load configuration file
       include_vars:
         file: "{{ directory }}/{{ inventory_hostname }}.yml"
-    
-    - name : ensure services
-      ansible.windows.win_service:
-        name: "{{ item.name }}"
-        start_mode: "{{ item.start_mode }}"
+  
+    - name : ensure partitions
+      community.windows.win_partition:
+        drive_letter: "{{ item.drive_letter }}"
+        partition_size: "{{ item.partition_size }}"
+        disk_number: "{{ item.disk_number }}"
+        partition_number: "{{ item.partition_number }}"
         state: "{{ item.state }}"
-      with_list: "{{ services }}"
+      with_list: "{{ partitions }}"
 
 
         

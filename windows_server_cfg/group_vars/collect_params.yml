@@ -1,8 +1,8 @@
 directory: ../files
 
 collect : 
-  - services
-  - features
-  - volumes
-  - softwares
-  - firewall
+#  - services
+#  - features
+  - partitions
+#  - softwares
+#  - firewall

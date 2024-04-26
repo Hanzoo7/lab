@@ -1,7 +1,7 @@
 ---
 - hosts: windows
   gather_facts: true
-  become_method: runas
+  become_method: false
   
   collections:
     - hanzoo7.windows
@@ -13,7 +13,7 @@
   tasks:
     - name: load configuration file
       include_vars:
-        file: "{{ directory }}/{{ ansible_hostname }}.yml"
+        file: "{{ directory }}/{{ inventory_hostname }}.yml"
     
     - name : ensure firewall policies
       hanzoo7.windows.win_firewall_rules:

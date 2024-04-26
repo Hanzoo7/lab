@@ -1,6 +1,6 @@
 ---
 - hosts: windows
-  gather_facts: true
+  gather_facts: false
   become_method: runas
   
   vars_files:
@@ -10,7 +10,7 @@
   tasks:
     - name: load configuration file
       include_vars:
-        file: "{{ directory }}/{{ ansible_hostname }}.yml"
+        file: "{{ directory }}/{{ inventory_hostname }}.yml"
     
     - name : ensure features
       ansible.windows.win_feature:
