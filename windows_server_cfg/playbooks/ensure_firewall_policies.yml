@@ -1,0 +1,33 @@
+---
+- hosts: windows
+  gather_facts: true
+  become_method: runas
+  
+  collections:
+    - hanzoo7.windows
+
+  vars_files:
+    - ../vaults/windows_ensure
+    - ../group_vars/collect_params.yml
+
+  tasks:
+    - name: load configuration file
+      include_vars:
+        file: "{{ directory }}/{{ ansible_hostname }}.yml"
+    
+    - name : ensure firewall policies
+      hanzoo7.windows.win_firewall_rules:
+        name: "{{ item.name }}"
+        displayName: "{{ item.displayName }}"
+        localport: "{{ item.localport }}"
+        remoteport: "{{ item.remoteport }}"
+        action: "{{ item.action }}"
+        direction: "{{ item.direction}}"
+        protocol: "{{ item.protocol }}"
+        profiles: "{{ item.profiles }}"
+        state: "{{ item.state }}"
+        enabled: "{{ item.enabled }}"
+      with_list: "{{ firewall_policies }}"
+
+
+        

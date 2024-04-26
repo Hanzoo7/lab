@@ -1,14 +1,14 @@
 ---
 - hosts: windows
-  gather_facts: true
+  gather_facts: false
   serial: 1
 
   collections:
     - hanzoo7.reporting
   
   vars_files:
-    - ../vaults/windows
-    - ../group_vars/hostConfigDirectory.yml
+    - ../vaults/windows_collect
+    - ../group_vars/collect_params.yml
 
   tasks:
     - include_role:

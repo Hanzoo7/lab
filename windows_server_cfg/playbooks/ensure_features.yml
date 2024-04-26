@@ -1,0 +1,22 @@
+---
+- hosts: windows
+  gather_facts: true
+  become_method: runas
+  
+  vars_files:
+    - ../vaults/windows_ensure
+    - ../group_vars/collect_params.yml
+
+  tasks:
+    - name: load configuration file
+      include_vars:
+        file: "{{ directory }}/{{ ansible_hostname }}.yml"
+    
+    - name : ensure features
+      ansible.windows.win_feature:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      with_list: "{{ features }}"
+
+
+        

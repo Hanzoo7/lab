@@ -1,0 +1,3551 @@
+services:
+  - name: AJRouter
+    state: stopped
+    start_mode: manual
+  - name: ALG
+    state: stopped
+    start_mode: manual
+  - name: AppHostSvc
+    state: started
+    start_mode: auto
+  - name: AppIDSvc
+    state: stopped
+    start_mode: manual
+  - name: Appinfo
+    state: started
+    start_mode: manual
+  - name: AppMgmt
+    state: stopped
+    start_mode: manual
+  - name: AppReadiness
+    state: stopped
+    start_mode: manual
+  - name: AppVClient
+    state: stopped
+    start_mode: disabled
+  - name: AppXSvc
+    state: stopped
+    start_mode: manual
+  - name: aspnet_state
+    state: stopped
+    start_mode: manual
+  - name: AudioEndpointBuilder
+    state: stopped
+    start_mode: manual
+  - name: Audiosrv
+    state: stopped
+    start_mode: manual
+  - name: AxInstSV
+    state: stopped
+    start_mode: disabled
+  - name: BFE
+    state: started
+    start_mode: auto
+  - name: BITS
+    state: stopped
+    start_mode: manual
+  - name: BrokerInfrastructure
+    state: started
+    start_mode: auto
+  - name: BTAGService
+    state: stopped
+    start_mode: manual
+  - name: BthAvctpSvc
+    state: started
+    start_mode: manual
+  - name: bthserv
+    state: stopped
+    start_mode: manual
+  - name: camsvc
+    state: stopped
+    start_mode: manual
+  - name: CaptureService_3426d8
+    state: stopped
+    start_mode: manual
+  - name: cbdhsvc_3426d8
+    state: stopped
+    start_mode: manual
+  - name: CDPSvc
+    state: started
+    start_mode: delayed
+  - name: CDPUserSvc_3426d8
+    state: started
+    start_mode: auto
+  - name: CertPropSvc
+    state: stopped
+    start_mode: manual
+  - name: ClipSVC
+    state: stopped
+    start_mode: manual
+  - name: COMSysApp
+    state: stopped
+    start_mode: manual
+  - name: ConsentUxUserSvc_3426d8
+    state: stopped
+    start_mode: manual
+  - name: CoreMessagingRegistrar
+    state: started
+    start_mode: auto
+  - name: CryptSvc
+    state: started
+    start_mode: auto
+  - name: CscService
+    state: stopped
+    start_mode: disabled
+  - name: DcomLaunch
+    state: started
+    start_mode: auto
+  - name: defragsvc
+    state: stopped
+    start_mode: manual
+  - name: DeviceAssociationService
+    state: stopped
+    start_mode: manual
+  - name: DeviceInstall
+    state: stopped
+    start_mode: manual
+  - name: DevicePickerUserSvc_3426d8
+    state: stopped
+    start_mode: disabled
+  - name: DevicesFlowUserSvc_3426d8
+    state: stopped
+    start_mode: manual
+  - name: DevQueryBroker
+    state: stopped
+    start_mode: manual
+  - name: Dhcp
+    state: started
+    start_mode: auto
+  - name: diagnosticshub.standardcollector.service
+    state: stopped
+    start_mode: manual
+  - name: DiagTrack
+    state: started
+    start_mode: auto
+  - name: DmEnrollmentSvc
+    state: stopped
+    start_mode: manual
+  - name: dmwappushservice
+    state: stopped
+    start_mode: disabled
+  - name: Dnscache
+    state: started
+    start_mode: auto
+  - name: DoSvc
+    state: stopped
+    start_mode: manual
+  - name: dot3svc
+    state: stopped
+    start_mode: manual
+  - name: DPS
+    state: started
+    start_mode: delayed
+  - name: DsmSvc
+    state: stopped
+    start_mode: manual
+  - name: DsSvc
+    state: stopped
+    start_mode: manual
+  - name: Eaphost
+    state: stopped
+    start_mode: manual
+  - name: EFS
+    state: stopped
+    start_mode: manual
+  - name: embeddedmode
+    state: stopped
+    start_mode: manual
+  - name: EntAppSvc
+    state: stopped
+    start_mode: manual
+  - name: EventLog
+    state: started
+    start_mode: auto
+  - name: EventSystem
+    state: started
+    start_mode: auto
+  - name: fdPHost
+    state: started
+    start_mode: manual
+  - name: FDResPub
+    state: started
+    start_mode: manual
+  - name: FontCache
+    state: started
+    start_mode: auto
+  - name: FrameServer
+    state: stopped
+    start_mode: manual
+  - name: gpsvc
+    state: started
+    start_mode: auto
+  - name: GraphicsPerfSvc
+    state: stopped
+    start_mode: disabled
+  - name: hidserv
+    state: stopped
+    start_mode: manual
+  - name: HvHost
+    state: stopped
+    start_mode: manual
+  - name: icssvc
+    state: stopped
+    start_mode: disabled
+  - name: IKEEXT
+    state: started
+    start_mode: auto
+  - name: InstallService
+    state: stopped
+    start_mode: manual
+  - name: iphlpsvc
+    state: started
+    start_mode: auto
+  - name: KeyIso
+    state: started
+    start_mode: manual
+  - name: KPSSVC
+    state: stopped
+    start_mode: manual
+  - name: KtmRm
+    state: stopped
+    start_mode: manual
+  - name: LanmanServer
+    state: started
+    start_mode: auto
+  - name: LanmanWorkstation
+    state: started
+    start_mode: auto
+  - name: lfsvc
+    state: stopped
+    start_mode: disabled
+  - name: LicenseManager
+    state: stopped
+    start_mode: manual
+  - name: lltdsvc
+    state: stopped
+    start_mode: disabled
+  - name: lmhosts
+    state: started
+    start_mode: manual
+  - name: LSM
+    state: started
+    start_mode: auto
+  - name: MapsBroker
+    state: stopped
+    start_mode: disabled
+  - name: mpssvc
+    state: started
+    start_mode: auto
+  - name: MSDTC
+    state: started
+    start_mode: delayed
+  - name: MSiSCSI
+    state: stopped
+    start_mode: manual
+  - name: msiserver
+    state: stopped
+    start_mode: manual
+  - name: MSMQ
+    state: started
+    start_mode: auto
+  - name: NcaSvc
+    state: stopped
+    start_mode: manual
+  - name: NcbService
+    state: started
+    start_mode: manual
+  - name: Netlogon
+    state: stopped
+    start_mode: manual
+  - name: Netman
+    state: stopped
+    start_mode: manual
+  - name: NetMsmqActivator
+    state: started
+    start_mode: auto
+  - name: netprofm
+    state: started
+    start_mode: manual
+  - name: NetSetupSvc
+    state: stopped
+    start_mode: manual
+  - name: NetTcpActivator
+    state: started
+    start_mode: auto
+  - name: NetTcpPortSharing
+    state: started
+    start_mode: manual
+  - name: NgcCtnrSvc
+    state: stopped
+    start_mode: manual
+  - name: NgcSvc
+    state: stopped
+    start_mode: manual
+  - name: NlaSvc
+    state: started
+    start_mode: auto
+  - name: nsi
+    state: started
+    start_mode: auto
+  - name: PcaSvc
+    state: stopped
+    start_mode: manual
+  - name: PerfHost
+    state: stopped
+    start_mode: manual
+  - name: PhoneSvc
+    state: stopped
+    start_mode: disabled
+  - name: PimIndexMaintenanceSvc_3426d8
+    state: stopped
+    start_mode: manual
+  - name: pla
+    state: stopped
+    start_mode: manual
+  - name: PlugPlay
+    state: started
+    start_mode: manual
+  - name: PolicyAgent
+    state: started
+    start_mode: manual
+  - name: Power
+    state: started
+    start_mode: auto
+  - name: PrintNotify
+    state: stopped
+    start_mode: manual
+  - name: PrintWorkflowUserSvc_3426d8
+    state: stopped
+    start_mode: manual
+  - name: ProfSvc
+    state: started
+    start_mode: auto
+  - name: PushToInstall
+    state: stopped
+    start_mode: disabled
+  - name: QWAVE
+    state: stopped
+    start_mode: manual
+  - name: RasAuto
+    state: stopped
+    start_mode: manual
+  - name: RasMan
+    state: started
+    start_mode: auto
+  - name: RemoteAccess
+    state: stopped
+    start_mode: disabled
+  - name: RemoteRegistry
+    state: stopped
+    start_mode: auto
+  - name: RmSvc
+    state: stopped
+    start_mode: disabled
+  - name: RpcEptMapper
+    state: started
+    start_mode: auto
+  - name: RpcLocator
+    state: stopped
+    start_mode: manual
+  - name: RpcSs
+    state: started
+    start_mode: auto
+  - name: RSoPProv
+    state: stopped
+    start_mode: manual
+  - name: sacsvr
+    state: stopped
+    start_mode: manual
+  - name: SamSs
+    state: started
+    start_mode: auto
+  - name: SCardSvr
+    state: stopped
+    start_mode: manual
+  - name: ScDeviceEnum
+    state: stopped
+    start_mode: disabled
+  - name: Schedule
+    state: started
+    start_mode: auto
+  - name: SCPolicySvc
+    state: stopped
+    start_mode: manual
+  - name: seclogon
+    state: stopped
+    start_mode: manual
+  - name: SecurityHealthService
+    state: started
+    start_mode: manual
+  - name: SEMgrSvc
+    state: stopped
+    start_mode: disabled
+  - name: SENS
+    state: started
+    start_mode: auto
+  - name: Sense
+    state: stopped
+    start_mode: manual
+  - name: SensorDataService
+    state: stopped
+    start_mode: disabled
+  - name: SensorService
+    state: stopped
+    start_mode: manual
+  - name: SensrSvc
+    state: stopped
+    start_mode: manual
+  - name: SessionEnv
+    state: stopped
+    start_mode: manual
+  - name: SgrmBroker
+    state: stopped
+    start_mode: manual
+  - name: SharedAccess
+    state: stopped
+    start_mode: disabled
+  - name: ShellHWDetection
+    state: started
+    start_mode: auto
+  - name: shpamsvc
+    state: stopped
+    start_mode: disabled
+  - name: smphost
+    state: started
+    start_mode: manual
+  - name: SNMPTRAP
+    state: stopped
+    start_mode: manual
+  - name: Spooler
+    state: started
+    start_mode: auto
+  - name: sppsvc
+    state: stopped
+    start_mode: delayed
+  - name: SSDPSRV
+    state: stopped
+    start_mode: disabled
+  - name: ssh-agent
+    state: stopped
+    start_mode: disabled
+  - name: SstpSvc
+    state: started
+    start_mode: manual
+  - name: StateRepository
+    state: started
+    start_mode: manual
+  - name: stisvc
+    state: stopped
+    start_mode: manual
+  - name: StorSvc
+    state: started
+    start_mode: manual
+  - name: svsvc
+    state: stopped
+    start_mode: manual
+  - name: swprv
+    state: stopped
+    start_mode: manual
+  - name: SysMain
+    state: started
+    start_mode: auto
+  - name: SystemEventsBroker
+    state: started
+    start_mode: auto
+  - name: TabletInputService
+    state: started
+    start_mode: manual
+  - name: tapisrv
+    state: stopped
+    start_mode: manual
+  - name: TermService
+    state: stopped
+    start_mode: manual
+  - name: Themes
+    state: started
+    start_mode: auto
+  - name: TieringEngineService
+    state: stopped
+    start_mode: manual
+  - name: TimeBrokerSvc
+    state: started
+    start_mode: manual
+  - name: TokenBroker
+    state: started
+    start_mode: manual
+  - name: TrkWks
+    state: started
+    start_mode: auto
+  - name: TrustedInstaller
+    state: stopped
+    start_mode: manual
+  - name: tzautoupdate
+    state: stopped
+    start_mode: disabled
+  - name: UALSVC
+    state: started
+    start_mode: delayed
+  - name: UevAgentService
+    state: stopped
+    start_mode: disabled
+  - name: UmRdpService
+    state: stopped
+    start_mode: manual
+  - name: UnistoreSvc_3426d8
+    state: stopped
+    start_mode: manual
+  - name: upnphost
+    state: stopped
+    start_mode: disabled
+  - name: UserDataSvc_3426d8
+    state: stopped
+    start_mode: manual
+  - name: UserManager
+    state: started
+    start_mode: auto
+  - name: UsoSvc
+    state: started
+    start_mode: delayed
+  - name: VaultSvc
+    state: stopped
+    start_mode: manual
+  - name: VBoxService
+    state: started
+    start_mode: auto
+  - name: vds
+    state: stopped
+    start_mode: manual
+  - name: vmicguestinterface
+    state: stopped
+    start_mode: manual
+  - name: vmicheartbeat
+    state: stopped
+    start_mode: manual
+  - name: vmickvpexchange
+    state: stopped
+    start_mode: manual
+  - name: vmicrdv
+    state: stopped
+    start_mode: manual
+  - name: vmicshutdown
+    state: stopped
+    start_mode: manual
+  - name: vmictimesync
+    state: stopped
+    start_mode: manual
+  - name: vmicvmsession
+    state: stopped
+    start_mode: manual
+  - name: vmicvss
+    state: stopped
+    start_mode: manual
+  - name: VSS
+    state: stopped
+    start_mode: manual
+  - name: W32Time
+    state: started
+    start_mode: auto
+  - name: W3LOGSVC
+    state: stopped
+    start_mode: manual
+  - name: W3SVC
+    state: started
+    start_mode: auto
+  - name: WaaSMedicSvc
+    state: stopped
+    start_mode: manual
+  - name: WalletService
+    state: stopped
+    start_mode: disabled
+  - name: WarpJITSvc
+    state: stopped
+    start_mode: manual
+  - name: WAS
+    state: started
+    start_mode: manual
+  - name: WbioSrvc
+    state: stopped
+    start_mode: manual
+  - name: Wcmsvc
+    state: started
+    start_mode: auto
+  - name: WdiServiceHost
+    state: stopped
+    start_mode: manual
+  - name: WdiSystemHost
+    state: started
+    start_mode: manual
+  - name: WdNisSvc
+    state: started
+    start_mode: manual
+  - name: Wecsvc
+    state: stopped
+    start_mode: manual
+  - name: WEPHOSTSVC
+    state: stopped
+    start_mode: manual
+  - name: wercplsupport
+    state: stopped
+    start_mode: manual
+  - name: WerSvc
+    state: stopped
+    start_mode: manual
+  - name: WiaRpc
+    state: stopped
+    start_mode: manual
+  - name: WinDefend
+    state: started
+    start_mode: auto
+  - name: WinHttpAutoProxySvc
+    state: started
+    start_mode: manual
+  - name: Winmgmt
+    state: started
+    start_mode: auto
+  - name: WinRM
+    state: started
+    start_mode: auto
+  - name: wisvc
+    state: stopped
+    start_mode: disabled
+  - name: wlidsvc
+    state: stopped
+    start_mode: manual
+  - name: wmiApSrv
+    state: stopped
+    start_mode: manual
+  - name: WMPNetworkSvc
+    state: stopped
+    start_mode: manual
+  - name: WPDBusEnum
+    state: stopped
+    start_mode: manual
+  - name: WpnService
+    state: started
+    start_mode: auto
+  - name: WpnUserService_3426d8
+    state: started
+    start_mode: auto
+  - name: WSearch
+    state: stopped
+    start_mode: disabled
+  - name: wuauserv
+    state: stopped
+    start_mode: manual
+features:
+  - name: RemoteAccess
+    state: absent
+  - name: DirectAccess-VPN
+    state: absent
+  - name: Web-Application-Proxy
+    state: absent
+  - name: Routing
+    state: absent
+  - name: DeviceHealthAttestationService
+    state: absent
+  - name: Hyper-V
+    state: absent
+  - name: Fax
+    state: absent
+  - name: DHCP
+    state: absent
+  - name: DNS
+    state: absent
+  - name: Web-Server
+    state: present
+  - name: Web-WebServer
+    state: present
+  - name: Web-Common-Http
+    state: present
+  - name: Web-Static-Content
+    state: absent
+  - name: Web-Default-Doc
+    state: present
+  - name: Web-Http-Errors
+    state: absent
+  - name: Web-Dir-Browsing
+    state: absent
+  - name: Web-DAV-Publishing
+    state: absent
+  - name: Web-Http-Redirect
+    state: absent
+  - name: Web-Health
+    state: absent
+  - name: Web-Http-Logging
+    state: absent
+  - name: Web-ODBC-Logging
+    state: absent
+  - name: Web-Custom-Logging
+    state: absent
+  - name: Web-Request-Monitor
+    state: absent
+  - name: Web-Log-Libraries
+    state: absent
+  - name: Web-Http-Tracing
+    state: absent
+  - name: Web-Performance
+    state: absent
+  - name: Web-Stat-Compression
+    state: absent
+  - name: Web-Dyn-Compression
+    state: absent
+  - name: Web-Security
+    state: present
+  - name: Web-Filtering
+    state: present
+  - name: Web-Basic-Auth
+    state: absent
+  - name: Web-Digest-Auth
+    state: absent
+  - name: Web-Client-Auth
+    state: absent
+  - name: Web-Cert-Auth
+    state: absent
+  - name: Web-Windows-Auth
+    state: absent
+  - name: Web-Url-Auth
+    state: absent
+  - name: Web-CertProvider
+    state: absent
+  - name: Web-IP-Security
+    state: absent
+  - name: Web-App-Dev
+    state: present
+  - name: Web-Net-Ext45
+    state: present
+  - name: Web-ASP
+    state: absent
+  - name: Web-Asp-Net
+    state: absent
+  - name: Web-Asp-Net45
+    state: present
+  - name: Web-CGI
+    state: absent
+  - name: Web-Net-Ext
+    state: absent
+  - name: Web-ISAPI-Ext
+    state: present
+  - name: Web-Includes
+    state: absent
+  - name: Web-ISAPI-Filter
+    state: present
+  - name: Web-AppInit
+    state: absent
+  - name: Web-WebSockets
+    state: absent
+  - name: Web-Mgmt-Tools
+    state: absent
+  - name: Web-Mgmt-Console
+    state: absent
+  - name: Web-Mgmt-Compat
+    state: absent
+  - name: Web-Metabase
+    state: absent
+  - name: Web-WMI
+    state: absent
+  - name: Web-Lgcy-Mgmt-Console
+    state: absent
+  - name: Web-Lgcy-Scripting
+    state: absent
+  - name: Web-Scripting-Tools
+    state: absent
+  - name: Web-Mgmt-Service
+    state: absent
+  - name: Web-Ftp-Server
+    state: absent
+  - name: Web-Ftp-Service
+    state: absent
+  - name: Web-Ftp-Ext
+    state: absent
+  - name: HostGuardianServiceRole
+    state: absent
+  - name: AD-Domain-Services
+    state: absent
+  - name: ADLDS
+    state: absent
+  - name: ADRMS
+    state: absent
+  - name: ADRMS-Server
+    state: absent
+  - name: ADRMS-Identity
+    state: absent
+  - name: Remote-Desktop-Services
+    state: absent
+  - name: RDS-Web-Access
+    state: absent
+  - name: RDS-Licensing
+    state: absent
+  - name: RDS-Virtualization
+    state: absent
+  - name: RDS-Gateway
+    state: absent
+  - name: RDS-RD-Server
+    state: absent
+  - name: RDS-Connection-Broker
+    state: absent
+  - name: VolumeActivation
+    state: absent
+  - name: Print-Services
+    state: absent
+  - name: Print-Server
+    state: absent
+  - name: Print-Internet
+    state: absent
+  - name: Print-LPD-Service
+    state: absent
+  - name: AD-Certificate
+    state: absent
+  - name: ADCS-Cert-Authority
+    state: absent
+  - name: ADCS-Web-Enrollment
+    state: absent
+  - name: ADCS-Online-Cert
+    state: absent
+  - name: ADCS-Device-Enrollment
+    state: absent
+  - name: ADCS-Enroll-Web-Svc
+    state: absent
+  - name: ADCS-Enroll-Web-Pol
+    state: absent
+  - name: WDS
+    state: absent
+  - name: WDS-Deployment
+    state: absent
+  - name: WDS-Transport
+    state: absent
+  - name: ADFS-Federation
+    state: absent
+  - name: FileAndStorage-Services
+    state: present
+  - name: File-Services
+    state: absent
+  - name: FS-FileServer
+    state: absent
+  - name: FS-BranchCache
+    state: absent
+  - name: FS-Data-Deduplication
+    state: absent
+  - name: FS-SyncShareService
+    state: absent
+  - name: FS-DFS-Namespace
+    state: absent
+  - name: iSCSITarget-VSS-VDS
+    state: absent
+  - name: FS-Resource-Manager
+    state: absent
+  - name: FS-DFS-Replication
+    state: absent
+  - name: FS-iSCSITarget-Server
+    state: absent
+  - name: FS-NFS-Service
+    state: absent
+  - name: FS-VSS-Agent
+    state: absent
+  - name: Storage-Services
+    state: present
+  - name: NPAS
+    state: absent
+  - name: UpdateServices
+    state: absent
+  - name: UpdateServices-WidDB
+    state: absent
+  - name: UpdateServices-Services
+    state: absent
+  - name: UpdateServices-DB
+    state: absent
+  - name: Remote-Assistance
+    state: absent
+  - name: Windows-Internal-Database
+    state: absent
+  - name: BranchCache
+    state: absent
+  - name: BitLocker
+    state: absent
+  - name: Internet-Print-Client
+    state: absent
+  - name: NFS-Client
+    state: absent
+  - name: Failover-Clustering
+    state: absent
+  - name: Setup-and-Boot-Event-Collection
+    state: absent
+  - name: RDC
+    state: absent
+  - name: Containers
+    state: absent
+  - name: Data-Center-Bridging
+    state: absent
+  - name: BitLocker-NetworkUnlock
+    state: absent
+  - name: Direct-Play
+    state: absent
+  - name: NLB
+    state: absent
+  - name: qWave
+    state: absent
+  - name: ManagementOdata
+    state: absent
+  - name: WinRM-IIS-Ext
+    state: absent
+  - name: NET-Framework-Features
+    state: absent
+  - name: NET-Framework-Core
+    state: absent
+  - name: NET-HTTP-Activation
+    state: absent
+  - name: NET-Non-HTTP-Activ
+    state: absent
+  - name: NET-Framework-45-Features
+    state: present
+  - name: NET-Framework-45-Core
+    state: present
+  - name: NET-Framework-45-ASPNET
+    state: present
+  - name: NET-WCF-Services45
+    state: present
+  - name: NET-WCF-Pipe-Activation45
+    state: absent
+  - name: NET-WCF-HTTP-Activation45
+    state: absent
+  - name: NET-WCF-MSMQ-Activation45
+    state: present
+  - name: NET-WCF-TCP-Activation45
+    state: present
+  - name: NET-WCF-TCP-PortSharing45
+    state: present
+  - name: GPMC
+    state: absent
+  - name: WindowsStorageManagementService
+    state: absent
+  - name: Web-WHC
+    state: absent
+  - name: FS-SMBBW
+    state: absent
+  - name: Server-Media-Foundation
+    state: absent
+  - name: MSMQ
+    state: present
+  - name: MSMQ-Services
+    state: present
+  - name: MSMQ-Server
+    state: present
+  - name: MSMQ-Triggers
+    state: absent
+  - name: MSMQ-Directory
+    state: absent
+  - name: MSMQ-Multicasting
+    state: absent
+  - name: MSMQ-HTTP-Support
+    state: absent
+  - name: MSMQ-Routing
+    state: absent
+  - name: MSMQ-DCOM
+    state: absent
+  - name: LPR-Port-Monitor
+    state: absent
+  - name: Multipath-IO
+    state: absent
+  - name: MultiPoint-Connector
+    state: absent
+  - name: MultiPoint-Connector-Services
+    state: absent
+  - name: MultiPoint-Tools
+    state: absent
+  - name: RSAT
+    state: absent
+  - name: RSAT-Feature-Tools
+    state: absent
+  - name: RSAT-SMTP
+    state: absent
+  - name: IPAM-Client-Feature
+    state: absent
+  - name: RSAT-Storage-Replica
+    state: absent
+  - name: RSAT-NLB
+    state: absent
+  - name: RSAT-Bits-Server
+    state: absent
+  - name: RSAT-Clustering
+    state: absent
+  - name: RSAT-Clustering-PowerShell
+    state: absent
+  - name: RSAT-Clustering-Mgmt
+    state: absent
+  - name: RSAT-Clustering-CmdInterface
+    state: absent
+  - name: RSAT-Clustering-AutomationServer
+    state: absent
+  - name: RSAT-Shielded-VM-Tools
+    state: absent
+  - name: RSAT-WINS
+    state: absent
+  - name: RSAT-DataCenterBridging-LLDP-Tools
+    state: absent
+  - name: RSAT-SNMP
+    state: absent
+  - name: RSAT-SMS
+    state: absent
+  - name: RSAT-System-Insights
+    state: absent
+  - name: RSAT-Feature-Tools-BitLocker
+    state: absent
+  - name: RSAT-Feature-Tools-BitLocker-RemoteAdminTool
+    state: absent
+  - name: RSAT-Feature-Tools-BitLocker-BdeAducExt
+    state: absent
+  - name: RSAT-Role-Tools
+    state: absent
+  - name: RSAT-AD-Tools
+    state: absent
+  - name: RSAT-ADLDS
+    state: absent
+  - name: RSAT-AD-PowerShell
+    state: absent
+  - name: RSAT-ADDS
+    state: absent
+  - name: RSAT-AD-AdminCenter
+    state: absent
+  - name: RSAT-ADDS-Tools
+    state: absent
+  - name: RSAT-Hyper-V-Tools
+    state: absent
+  - name: Hyper-V-PowerShell
+    state: absent
+  - name: Hyper-V-Tools
+    state: absent
+  - name: RSAT-RDS-Tools
+    state: absent
+  - name: RSAT-RDS-Licensing-Diagnosis-UI
+    state: absent
+  - name: RSAT-RDS-Gateway
+    state: absent
+  - name: RDS-Licensing-UI
+    state: absent
+  - name: UpdateServices-RSAT
+    state: absent
+  - name: UpdateServices-API
+    state: absent
+  - name: UpdateServices-UI
+    state: absent
+  - name: RSAT-VA-Tools
+    state: absent
+  - name: RSAT-RemoteAccess
+    state: absent
+  - name: RSAT-RemoteAccess-Mgmt
+    state: absent
+  - name: RSAT-RemoteAccess-PowerShell
+    state: absent
+  - name: RSAT-NPAS
+    state: absent
+  - name: RSAT-File-Services
+    state: absent
+  - name: RSAT-DFS-Mgmt-Con
+    state: absent
+  - name: RSAT-FSRM-Mgmt
+    state: absent
+  - name: RSAT-NFS-Admin
+    state: absent
+  - name: RSAT-ADRMS
+    state: absent
+  - name: RSAT-Print-Services
+    state: absent
+  - name: RSAT-ADCS
+    state: absent
+  - name: RSAT-ADCS-Mgmt
+    state: absent
+  - name: RSAT-Online-Responder
+    state: absent
+  - name: WDS-AdminPack
+    state: absent
+  - name: RSAT-Fax
+    state: absent
+  - name: RSAT-DHCP
+    state: absent
+  - name: RSAT-DNS-Server
+    state: absent
+  - name: Migration
+    state: absent
+  - name: FabricShieldedTools
+    state: absent
+  - name: WoW64-Support
+    state: present
+  - name: PNRP
+    state: absent
+  - name: DiskIo-QoS
+    state: absent
+  - name: CMAK
+    state: absent
+  - name: WebDAV-Redirector
+    state: absent
+  - name: Storage-Replica
+    state: absent
+  - name: RPC-over-HTTP-Proxy
+    state: absent
+  - name: Windows-Server-Backup
+    state: absent
+  - name: IPAM
+    state: absent
+  - name: SMTP-Server
+    state: absent
+  - name: WINS
+    state: absent
+  - name: WAS
+    state: present
+  - name: WAS-Process-Model
+    state: present
+  - name: WAS-Config-APIs
+    state: present
+  - name: WAS-NET-Environment
+    state: absent
+  - name: Search-Service
+    state: absent
+  - name: Wireless-Networking
+    state: absent
+  - name: BITS
+    state: absent
+  - name: BITS-IIS-Ext
+    state: absent
+  - name: BITS-Compact-Server
+    state: absent
+  - name: ISNS
+    state: absent
+  - name: SNMP-Service
+    state: absent
+  - name: SNMP-WMI-Provider
+    state: absent
+  - name: Simple-TCPIP
+    state: absent
+  - name: FS-SMB1
+    state: absent
+  - name: FS-SMB1-CLIENT
+    state: absent
+  - name: FS-SMB1-SERVER
+    state: absent
+  - name: Microsoft-Windows-Subsystem-Linux
+    state: absent
+  - name: EnhancedStorage
+    state: absent
+  - name: SMS
+    state: absent
+  - name: SMS-Proxy
+    state: absent
+  - name: HostGuardian
+    state: absent
+  - name: System-DataArchiver
+    state: present
+  - name: System-Insights
+    state: absent
+  - name: Telnet-Client
+    state: absent
+  - name: TFTP-Client
+    state: absent
+  - name: NetworkVirtualization
+    state: absent
+  - name: Biometric-Framework
+    state: absent
+  - name: Windows-Defender
+    state: present
+  - name: Windows-Identity-Foundation
+    state: absent
+  - name: PowerShellRoot
+    state: present
+  - name: PowerShell
+    state: present
+  - name: WindowsPowerShellWebAccess
+    state: absent
+  - name: PowerShell-V2
+    state: absent
+  - name: DSC-Service
+    state: absent
+  - name: PowerShell-ISE
+    state: present
+  - name: Windows-TIFF-IFilter
+    state: absent
+  - name: XPS-Viewer
+    state: present
+volumes:
+  - DriveLetter: D
+    FileSystem: CDFS
+    FileSystemLabel: VBox_GAs_7.0.14
+    Size: 0.05
+    Used: 0.05
+    SizeRemaining: 0
+    Used%: 100
+  - DriveLetter: null
+    FileSystem: NTFS
+    FileSystemLabel: Réservé au système
+    Size: 0.54
+    Used: 0.41
+    SizeRemaining: 0.13
+    Used%: 75.67
+  - DriveLetter: C
+    FileSystem: NTFS
+    FileSystemLabel: ''
+    Size: 99.46
+    Used: 11.17
+    SizeRemaining: 88.29
+    Used%: 11.23
+softwares:
+  Name: Oracle VM VirtualBox Guest Additions 7.0.14
+  Version: 7.0.14.161095
+  InstallLocation: null
+  Publisher: Oracle and/or its affiliates
+firewall_policies:
+  - name: WMPNSS-UPnP-Out-TCP
+    displayName: Service Partage réseau du Lecteur Windows Media (Trafic sortant sur
+      l’hôte du périphérique Plug-and-Play universel)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-Out-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (TCP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-In-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (TCP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-Out-UDP
+    displayName: Service de partage réseau du Lecteur Windows Media (UDP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-In-UDP
+    displayName: Service de partage réseau du Lecteur Windows Media (UDP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-WMP-Out-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (Diffusion en
+      continu-TCP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-WMP-Out-UDP
+    displayName: Service de partage réseau du Lecteur Windows Media (Diffusion en
+      continu-UDP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-WMP-In-UDP
+    displayName: Service de partage réseau du Lecteur Windows Media (Diffusion en
+      continu-UDP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-HTTPSTR-Out-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (HTTP-Diffusion
+      en continu-Sortie)
+    localport: Any
+    remoteport: '10243'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-HTTPSTR-In-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (HTTP-Diffusion
+      en continu-Entrée)
+    localport: '10243'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-UPnPHost-Out-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (UPnP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-UPnPHost-In-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (UPnP-Entrée)
+    localport: '2869'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-SSDPSrv-Out-UDP
+    displayName: Service de partage réseau du Lecteur Windows Media (SSDP-Sortie)
+    localport: Any
+    remoteport: '1900'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-SSDPSrv-In-UDP
+    displayName: Service de partage réseau du Lecteur Windows Media (SSDP-Entrée)
+    localport: '1900'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-QWave-Out-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (qWave-TCP-Sortie)
+    localport: Any
+    remoteport: '2177'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-QWave-In-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (qWave-TCP-Entrée)
+    localport: '2177'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-QWave-Out-UDP
+    displayName: Service de partage réseau du Lecteur Windows Media (qWave-UDP-Sortie)
+    localport: Any
+    remoteport: '2177'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-QWave-In-UDP
+    displayName: Service de partage réseau du Lecteur Windows Media (qWave-UDP-Entrée)
+    localport: '2177'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-Out-TCP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (TCP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-In-TCP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (TCP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-Out-UDP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (UDP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-In-UDP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (UDP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-WMP-Out-TCP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (Diffusion en
+      continu-TCP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-WMP-Out-UDP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (Diffusion en
+      continu-UDP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-WMP-In-UDP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (Diffusion en
+      continu-UDP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-HTTPSTR-Out-TCP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (HTTP-Diffusion
+      en continu-Sortie)
+    localport: Any
+    remoteport: '10243'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-HTTPSTR-In-TCP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (HTTP-Diffusion
+      en continu-Entrée)
+    localport: '10243'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-QWave-Out-TCP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (qWave-TCP-Sortie)
+    localport: Any
+    remoteport: '2177'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-QWave-In-TCP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (qWave-TCP-Entrée)
+    localport: '2177'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-QWave-Out-UDP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (qWave-UDP-Sortie)
+    localport: Any
+    remoteport: '2177'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: WMPNSS-QWave-In-UDP-NoScope
+    displayName: Service de partage réseau du Lecteur Windows Media (qWave-UDP-Entrée)
+    localport: '2177'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: WMP-Out-TCP
+    displayName: Lecteur Windows Media (TCP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMP-Out-UDP
+    displayName: Lecteur Windows Media (UDP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMP-In-UDP
+    displayName: Lecteur Windows Media (UDP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMP-Out-TCP-x86
+    displayName: Lecteur Windows Media x86 (Trafic sortant TCP)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMP-Out-UDP-x86
+    displayName: Lecteur Windows Media x86 (Trafic sortant UDP)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMP-In-UDP-x86
+    displayName: Lecteur Windows Media x86 (Trafic entrant UDP)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMI-ASYNC-In-TCP
+    displayName: Windows Management Instrumentation (ASync-In)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMI-WINMGMT-Out-TCP
+    displayName: Infrastructure de gestion Windows (WMI-Out)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMI-WINMGMT-In-TCP
+    displayName: Windows Management Instrumentation (WMI-In)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WMI-RPCSS-In-TCP
+    displayName: Windows Management Instrumentation (DCOM-In)
+    localport: '135'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteFwAdmin-RPCSS-In-TCP
+    displayName: Gestion à distance du Pare-feu Windows Defender (RPC-EPMAP)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteFwAdmin-In-TCP
+    displayName: Gestion à distance (RPC) du Pare-feu Windows Defender
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: MDNS-Out-UDP-Public-Active
+    displayName: mDNS (UDP-Sortie)
+    localport: Any
+    remoteport: '5353'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: MDNS-Out-UDP-Domain-Active
+    displayName: mDNS (UDP-Sortie)
+    localport: Any
+    remoteport: '5353'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: MDNS-Out-UDP-Private-Active
+    displayName: mDNS (UDP-Sortie)
+    localport: Any
+    remoteport: '5353'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Private
+    state: present
+    enabled: 'True'
+  - name: MDNS-In-UDP-Public-Active
+    displayName: mDNS (UDP-Entrée)
+    localport: '5353'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: MDNS-In-UDP-Domain-Active
+    displayName: mDNS (UDP-Entrée)
+    localport: '5353'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: MDNS-In-UDP-Private-Active
+    displayName: mDNS (UDP-Entrée)
+    localport: '5353'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Private
+    state: present
+    enabled: 'True'
+  - name: RemoteSvcAdmin-RPCSS-In-TCP
+    displayName: Gestion des services à distance (RPC-EPMAP)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteSvcAdmin-NP-In-TCP
+    displayName: Gestion des services à distance (NP-Entrée)
+    localport: '445'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteSvcAdmin-In-TCP
+    displayName: Gestion des services à distance (RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: MSDTC-RPCSS-In-TCP
+    displayName: Coordinateur de transactions distribuées (RPC-EPMAP)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: MSDTC-KTMRM-In-TCP
+    displayName: Coordinateur de transactions distribuées (RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: MSDTC-Out-TCP
+    displayName: Coordinateur de transactions distribuées (TCP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: MSDTC-In-TCP
+    displayName: Coordinateur de transactions distribuées (TCP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: ComPlusRemoteAdministration-DCOM-In
+    displayName: Administration à distance COM+ (DCOM-In)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: ComPlusNetworkAccess-DCOM-In
+    displayName: Accès réseau COM+ (DCOM-In)
+    localport: '135'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: CoreNet-GP-LSASS-Out-TCP
+    displayName: Gestion réseau de base - stratégie de groupe (Trafic sortant LSASS)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: CoreNet-DNS-Out-UDP
+    displayName: Gestion réseau de base - DNS (Trafic sortant UDP)
+    localport: Any
+    remoteport: '53'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-GP-Out-TCP
+    displayName: Gestion réseau de base - Stratégie de groupe (Trafic sortant TCP)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: CoreNet-GP-NP-Out-TCP
+    displayName: Gestion réseau de base - Stratégie de groupe (Trafic sortant NP)
+    localport: Any
+    remoteport: '445'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: CoreNet-IPv6-Out
+    displayName: Gestion réseau de base - IPv6 (Trafic sortant IPv6)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: '41'
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-IPv6-In
+    displayName: Gestion réseau de base - IPv6 (Trafic entrant IPv6)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: '41'
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-IPHTTPS-Out
+    displayName: Réseau de base - IPHTTPS (TCP-Sortant)
+    localport: Any
+    remoteport: IPHTTPSOut
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-IPHTTPS-In
+    displayName: Réseau de base - IPHTTPS (TCP-Entrant)
+    localport: IPHTTPSIn
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-Teredo-Out
+    displayName: Gestion réseau de base - Teredo (Trafic sortant UDP)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-Teredo-In
+    displayName: Gestion réseau de base - Teredo (Trafic entrant UDP)
+    localport: Teredo
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-DHCPV6-Out
+    displayName: Réseau de base - Protocole DHCP pour IPv6 (DHCPV6-Out)
+    localport: '546'
+    remoteport: '547'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-DHCPV6-In
+    displayName: Réseau de base - Protocole DHCP pour IPv6 (DHCPV6-In)
+    localport: '546'
+    remoteport: '547'
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-DHCP-Out
+    displayName: Réseau de base - Protocole DHCP (DHCP-Sortie)
+    localport: '68'
+    remoteport: '67'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-DHCP-In
+    displayName: Réseau de base - Protocole DHCP (DHCP-In)
+    localport: '68'
+    remoteport: '67'
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-IGMP-Out
+    displayName: Gestion réseau de base - Internet Group Management Protocol (Trafic
+      sortant IGMP)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: '2'
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-IGMP-In
+    displayName: Gestion réseau de base - Internet Group Management Protocol (Trafic
+      entrant IGMP)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: '2'
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP4-DUFRAG-In
+    displayName: Gestion réseau de base - Destination inaccessible Fragmentation nécessaire
+      (Trafic entrant ICMPv4)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv4
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-LD-Out
+    displayName: Réseau de base - Écouteur de multidiffusion terminé (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-LD-In
+    displayName: Réseau de base - Écouteur de multidiffusion terminé (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-LR2-Out
+    displayName: Réseau de base - Rapport d’écouteur de multidiffusion v2 (ICMPv6
+      sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-LR2-In
+    displayName: Réseau de base - Rapport d’écouteur de multidiffusion v2 (ICMPv6
+      entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-LR-Out
+    displayName: Réseau de base - Rapport d’écouteur de multidiffusion (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-LR-In
+    displayName: Réseau de base - Rapport d’écouteur de multidiffusion (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-LQ-Out
+    displayName: Réseau de base - Requête d’écouteur de multidiffusion (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-LQ-In
+    displayName: Réseau de base - Requête d’écouteur de multidiffusion (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-RS-Out
+    displayName: Réseau de base - Sollicitation des routeurs (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-RS-In
+    displayName: Réseau de base - Sollicitation de routeur (ICMPv6-Entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-RA-Out
+    displayName: Réseau de base - Publication de routage (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-RA-In
+    displayName: Réseau de base - Publication de routage (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-NDA-Out
+    displayName: Réseau de base - Publication de découverte de voisin (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-NDA-In
+    displayName: Réseau de base - Publication de découverte de voisin (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-NDS-Out
+    displayName: Réseau de base - Sollicitation de découverte de voisin (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-NDS-In
+    displayName: Réseau de base - Sollicitation de découverte de voisin (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-PP-Out
+    displayName: Gestion réseau de base - problème de paramètres (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-PP-In
+    displayName: Gestion réseau de base - problème de paramètres (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-TE-Out
+    displayName: Gestion réseau de base - temps dépassé (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-TE-In
+    displayName: Gestion réseau de base - temps dépassé (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-PTB-Out
+    displayName: Réseau de base - Paquet trop important (ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-PTB-In
+    displayName: Réseau de base - Paquet trop important (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: CoreNet-ICMP6-DU-In
+    displayName: Gestion réseau de base - Destination inaccessible (ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: TPMVSCMGR-Server-Out-TCP
+    displayName: Gestion de carte à puce virtuelle TPM (TCP-Out)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: TPMVSCMGR-Server-In-TCP
+    displayName: Gestion de carte à puce virtuelle TPM (TCP-In)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: TPMVSCMGR-RPCSS-In-TCP
+    displayName: Gestion de carte à puce virtuelle TPM (DCOM-In)
+    localport: '135'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: TPMVSCMGR-Server-Out-TCP-NoScope
+    displayName: Gestion de carte à puce virtuelle TPM (TCP-Out)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: TPMVSCMGR-Server-In-TCP-NoScope
+    displayName: Gestion de carte à puce virtuelle TPM (TCP-In)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: TPMVSCMGR-RPCSS-In-TCP-NoScope
+    displayName: Gestion de carte à puce virtuelle TPM (DCOM-In)
+    localport: '135'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: PerfLogsAlerts-DCOM-In-TCP-NoScope
+    displayName: Journaux et alertes de performance (DCOM entrant)
+    localport: '135'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: PerfLogsAlerts-PLASrv-In-TCP-NoScope
+    displayName: Journaux et alertes de performance (TCP entrant)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: PerfLogsAlerts-DCOM-In-TCP
+    displayName: Journaux et alertes de performance (DCOM entrant)
+    localport: '135'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: PerfLogsAlerts-PLASrv-In-TCP
+    displayName: Journaux et alertes de performance (TCP entrant)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-DeviceManagement-OmaDmClient-TCP-Out
+    displayName: Client de synchronisation de la gestion des périphériques de Windows
+      (TCP sortant)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: SPPSVC-In-TCP
+    displayName: Service de gestion de clés (TCP-Entrée)
+    localport: '1688'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: SLBM-MUX-IN-TCP
+    displayName: Multiplexeur d'équilibrage de charge logicielle (TCP-In)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteEventLogSvc-RPCSS-In-TCP
+    displayName: Gestion à distance des journaux des événements (RPC-EPMAP)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteEventLogSvc-NP-In-TCP
+    displayName: Gestion à distance des journaux des événements (NP-Entrée)
+    localport: '445'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteEventLogSvc-In-TCP
+    displayName: Gestion à distance des journaux des événements (RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: MsiScsi-Out-TCP
+    displayName: Service iSCSI (TCP-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: MsiScsi-In-TCP
+    displayName: Service iSCSI (TCP-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-LLMNR-Out-UDP
+    displayName: Partage de fichiers et d’imprimantes (LLMNR-UDP-Out)
+    localport: Any
+    remoteport: '5355'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-LLMNR-In-UDP
+    displayName: Partage de fichiers et d’imprimantes (LLMNR-UDP-In)
+    localport: '5355'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-ICMP6-ERQ-Out
+    displayName: Partage de fichiers et d’imprimantes (Demande d’écho - ICMPv6 sortant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-ICMP6-ERQ-In
+    displayName: Partage de fichiers et d’imprimantes (Demande d’écho - ICMPv6 entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv6
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-ICMP4-ERQ-Out
+    displayName: Partage de fichiers et d’imprimantes (Demande d’écho - Trafic sortant
+      ICMPv4)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: ICMPv4
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-ICMP4-ERQ-In
+    displayName: Partage de fichiers et d’imprimantes (Demande d’écho - Trafic entrant
+      ICMPv4)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: ICMPv4
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-RPCSS-In-TCP
+    displayName: Partage de fichiers et d’imprimantes (Service Spouleur - RPC-EPMAP)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-SpoolSvc-In-TCP
+    displayName: Partage de fichiers et d’imprimantes (service Spouleur - RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-NB_Datagram-Out-UDP
+    displayName: Partage de fichiers et d’imprimantes (NB-Datagramme-Sortie)
+    localport: Any
+    remoteport: '138'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-NB_Datagram-In-UDP
+    displayName: Partage de fichiers et d’imprimantes (NB-Datagramme-Entrée)
+    localport: '138'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-NB_Name-Out-UDP
+    displayName: Partage de fichiers et d’imprimantes (NB-Nom-Sortie)
+    localport: Any
+    remoteport: '137'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-NB_Name-In-UDP
+    displayName: Partage de fichiers et d’imprimantes (NB-Nom-Entrée)
+    localport: '137'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-SMB-Out-TCP
+    displayName: Partage de fichiers et d’imprimantes (SMB-Sortie)
+    localport: Any
+    remoteport: '445'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-SMB-In-TCP
+    displayName: Partage de fichiers et d’imprimantes (SMB-Entrée)
+    localport: '445'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-NB_Session-Out-TCP
+    displayName: Partage de fichiers et d’imprimantes (NB-Session-Sortie)
+    localport: Any
+    remoteport: '139'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: FPS-NB_Session-In-TCP
+    displayName: Partage de fichiers et d’imprimantes (NB-Session-Entrée)
+    localport: '139'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RVM-RPCSS-In-TCP
+    displayName: Gestion des volumes à distance (RPC-EPMAP)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RVM-VDSLDR-In-TCP
+    displayName: Gestion des volumes à distance - Chargeur du service de disque virtuel
+      (RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RVM-VDS-In-TCP
+    displayName: Gestion des volumes à distance - Service de disque virtuel (RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-DeviceManagement-CertificateInstall-TCP-Out
+    displayName: Programme d'installation du certificat de gestion des périphériques
+      Windows (TCP sortant)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: RRAS-PPTP-Out-TCP
+    displayName: Routage et accès distant (PPTP-Sortie)
+    localport: Any
+    remoteport: '1723'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RRAS-PPTP-In-TCP
+    displayName: Routage et accès distant (PPTP-Entrée)
+    localport: '1723'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RRAS-L2TP-Out-UDP
+    displayName: Routage et accès distant (L2TP-Sortie)
+    localport: Any
+    remoteport: '1701'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RRAS-L2TP-In-UDP
+    displayName: Routage et accès distant (L2TP-Entrée)
+    localport: '1701'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RRAS-GRE-Out
+    displayName: Routage et accès distant (GRE-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: '47'
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RRAS-GRE-In
+    displayName: Routage et accès distant (GRE-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: '47'
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: PlayTo-QWave-Out-TCP-PlayToScope
+    displayName: Fonctionnalité Diffuser sur un appareil (qWave-TCP-Sortie)
+    localport: Any
+    remoteport: '2177'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-QWave-In-TCP-PlayToScope
+    displayName: Fonctionnalité Diffuser sur un appareil (qWave-TCP-Entrée)
+    localport: '2177'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private, Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-QWave-Out-UDP-PlayToScope
+    displayName: Fonctionnalité Diffuser sur un appareil (qWave-UDP-Sortie)
+    localport: Any
+    remoteport: '2177'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-QWave-In-UDP-PlayToScope
+    displayName: Fonctionnalité Diffuser sur un appareil (qWave-UDP-Entrée)
+    localport: '2177'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-UPnP-Events-PlayToScope
+    displayName: Événements UPnP Diffuser sur un appareil (TCP-Entrée)
+    localport: '2869'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-SSDP-Discovery-PlayToScope
+    displayName: Découverte SSDP Diffuser sur un appareil (UDP-Entrée)
+    localport: PlayToDiscovery
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-In-RTSP-PlayToScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTSP-Diffusion en
+      continu-Entrée)
+    localport:
+      value:
+        - '23554'
+        - '23555'
+        - '23556'
+      Count: 3
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-In-RTSP-LocalSubnetScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTSP-Diffusion en
+      continu-Entrée)
+    localport:
+      value:
+        - '23554'
+        - '23555'
+        - '23556'
+      Count: 3
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private
+    state: present
+    enabled: 'True'
+  - name: PlayTo-In-RTSP-NoScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTSP-Diffusion en
+      continu-Entrée)
+    localport:
+      value:
+        - '23554'
+        - '23555'
+        - '23556'
+      Count: 3
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: PlayTo-Out-UDP-PlayToScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTP-Diffusion en
+      continu-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-Out-UDP-LocalSubnetScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTP-Diffusion en
+      continu-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Private
+    state: present
+    enabled: 'True'
+  - name: PlayTo-Out-UDP-NoScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTP-Diffusion en
+      continu-Sortie)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: PlayTo-In-UDP-PlayToScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTCP-Diffusion en
+      continu-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-In-UDP-LocalSubnetScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTCP-Diffusion en
+      continu-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Private
+    state: present
+    enabled: 'True'
+  - name: PlayTo-In-UDP-NoScope
+    displayName: Serveur de diffusion en continu sur un appareil (RTCP-Diffusion en
+      continu-Entrée)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: PlayTo-HTTPSTR-In-TCP-PlayToScope
+    displayName: Serveur de diffusion en continu sur un appareil (HTTP-Diffusion en
+      continu-Entrée)
+    localport: '10246'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: PlayTo-HTTPSTR-In-TCP-LocalSubnetScope
+    displayName: Serveur de diffusion en continu sur un appareil (HTTP-Diffusion en
+      continu-Entrée)
+    localport: '10246'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private
+    state: present
+    enabled: 'True'
+  - name: PlayTo-HTTPSTR-In-TCP-NoScope
+    displayName: Serveur de diffusion en continu sur un appareil (HTTP-Diffusion en
+      continu-Entrée)
+    localport: '10246'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: RemoteDesktop-In-TCP-WSS
+    displayName: Bureau à distance - (TCP-WSS-entrant)
+    localport: '3392'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteDesktop-In-TCP-WS
+    displayName: Bureau à distance - (TCP-WS-entrant)
+    localport: '3387'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteDesktop-Shadow-In-TCP
+    displayName: Bureau à distance - Contrôle à distance (TCP-In)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteDesktop-UserMode-In-UDP
+    displayName: Bureau à distance - Mode utilisateur (UDP entrant)
+    localport: '3389'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteDesktop-UserMode-In-TCP
+    displayName: Bureau à distance - Mode utilisateur (TCP entrant)
+    localport: '3389'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-PeerDist-HostedClient-Out
+    displayName: Client de mise en cache hébergé de BranchCache (HTTP-Out)
+    localport: Any
+    remoteport:
+      value:
+        - '80'
+        - '443'
+      Count: 2
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-PeerDist-HostedServer-Out
+    displayName: Serveur de cache hébergé de BranchCache (HTTP-Out)
+    localport:
+      value:
+        - '80'
+        - '443'
+      Count: 2
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-PeerDist-HostedServer-In
+    displayName: Serveur de cache hébergé de BranchCache (HTTP-In)
+    localport:
+      value:
+        - '80'
+        - '443'
+      Count: 2
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-PeerDist-WSD-Out
+    displayName: Découverte d’homologue de BranchCache (WSD-Out)
+    localport: Any
+    remoteport: '3702'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-PeerDist-WSD-In
+    displayName: Découverte d’homologue de BranchCache (WSD-In)
+    localport: '3702'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-PeerDist-HttpTrans-Out
+    displayName: Extraction du contenu de BranchCache (HTTP-Out)
+    localport: Any
+    remoteport: '80'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Microsoft-Windows-PeerDist-HttpTrans-In
+    displayName: Extraction du contenu de BranchCache (HTTP-In)
+    localport: '80'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WINRM-HTTP-Compat-In-TCP
+    displayName: Gestion à distance de Windows - Mode de compatibilité (HTTP-Entrée)
+    localport: '80'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: WINRM-HTTP-In-TCP-PUBLIC
+    displayName: Gestion à distance de Windows (HTTP-Entrée)
+    localport: '5985'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: WINRM-HTTP-In-TCP
+    displayName: Gestion à distance de Windows (HTTP-Entrée)
+    localport: '5985'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private
+    state: present
+    enabled: 'True'
+  - name: Microsoft-Windows-Enrollment-WinRT-TCP-Out
+    displayName: Service d'inscription de gestion des périphériques Windows (TCP sortant)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: RemoteTask-RPCSS-In-TCP
+    displayName: Gestion à distance des tâches planifiées (RPC-EPMAP)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: RemoteTask-In-TCP
+    displayName: Gestion à distance des tâches planifiées (RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: DIAL-Protocol-Server-HTTPSTR-In-TCP-LocalSubnetScope
+    displayName: Serveur protocole DIAL (HTTP-In)
+    localport: '10247'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Private
+    state: present
+    enabled: 'True'
+  - name: DIAL-Protocol-Server-In-TCP-NoScope
+    displayName: Serveur protocole DIAL (HTTP-In)
+    localport: '10247'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain
+    state: present
+    enabled: 'True'
+  - name: FPSSMBD-iWARP-In-TCP
+    displayName: Partage de fichiers et d’imprimantes via SMBDirect (iWARP-In)
+    localport: '5445'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: SSTP-IN-TCP
+    displayName: Protocole SSTP (SSTP-In)
+    localport: '443'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Wininit-Shutdown-In-Rule-TCP-RPC-EPMapper
+    displayName: Règle entrante pour l’arrêt à distance (RPC-EP entrant)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Wininit-Shutdown-In-Rule-TCP-RPC
+    displayName: Règle entrante pour l’arrêt à distance (TCP entrant)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Netlogon-TCP-RPC-In
+    displayName: Autorisation de service Netlogon (RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: Netlogon-NamedPipe-In
+    displayName: Service Accès réseau (NP-In)
+    localport: '445'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: AllJoyn-Router-Out-UDP
+    displayName: Routeur AllJoyn (UDP sortant)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private
+    state: present
+    enabled: 'True'
+  - name: AllJoyn-Router-In-UDP
+    displayName: Routeur AllJoyn (UDP entrant)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private
+    state: present
+    enabled: 'True'
+  - name: AllJoyn-Router-Out-TCP
+    displayName: Routeur AllJoyn (TCP sortant)
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private
+    state: present
+    enabled: 'True'
+  - name: AllJoyn-Router-In-TCP
+    displayName: Routeur AllJoyn (TCP entrant)
+    localport: '9955'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private
+    state: present
+    enabled: 'True'
+  - name: NETDIS-FDRESPUB-WSD-Out-UDP
+    displayName: Découverte du réseau (Pub WSD-Out)
+    localport: Any
+    remoteport: '3702'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-FDRESPUB-WSD-In-UDP
+    displayName: Découverte du réseau (Pub-WSD-In)
+    localport: '3702'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-LLMNR-Out-UDP
+    displayName: Découverte de réseau (LLMNR-UDP-Sortie)
+    localport: Any
+    remoteport: '5355'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-LLMNR-In-UDP
+    displayName: Découverte de réseau (LLMNR-UDP-Entrée)
+    localport: '5355'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-FDPHOST-Out-UDP
+    displayName: Découverte de réseau (WSD-Sortie)
+    localport: Any
+    remoteport: '3702'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-FDPHOST-In-UDP
+    displayName: Découverte de réseau (WSD-Entrée)
+    localport: '3702'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-UPnP-Out-TCP
+    displayName: Découverte du réseau (Trafic sortant sur l’hôte du périphérique Plug-and-Play
+      universel)
+    localport: Any
+    remoteport: '2869'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-SSDPSrv-Out-UDP
+    displayName: Découverte de réseau (SSDP-Sortie)
+    localport: Any
+    remoteport: '1900'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-SSDPSrv-In-UDP
+    displayName: Découverte de réseau (SSDP-Entrée)
+    localport: '1900'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-WSDEVNT-Out-TCP
+    displayName: Découverte du réseau (Événements WSD-Trafic sortant)
+    localport: Any
+    remoteport: '5357'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-WSDEVNT-In-TCP
+    displayName: Découverte du réseau (Événements WSD-Trafic entrant)
+    localport: '5357'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-WSDEVNTS-Out-TCP
+    displayName: Découverte du réseau (WSD EventsSecure-Out)
+    localport: Any
+    remoteport: '5358'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-WSDEVNTS-In-TCP
+    displayName: Découverte du réseau (WSD EventsSecure-In)
+    localport: '5358'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-NB_Datagram-Out-UDP
+    displayName: Découverte de réseau (NB-Datagramme-Sortie)
+    localport: Any
+    remoteport: '138'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-NB_Datagram-In-UDP
+    displayName: Découverte de réseau (NB-Datagramme-Entrée)
+    localport: '138'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-NB_Name-Out-UDP
+    displayName: Découverte de réseau (NB-Nom-Sortie)
+    localport: Any
+    remoteport: '137'
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-NB_Name-In-UDP
+    displayName: Découverte de réseau (NB-Nom-Entrée)
+    localport: '137'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-UPnPHost-Out-TCP
+    displayName: Découverte de réseau (UPnP-Sortie)
+    localport: Any
+    remoteport: '2869'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: NETDIS-UPnPHost-In-TCP
+    displayName: Découverte de réseau (UPnP-Entrée)
+    localport: '2869'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: EventForwarder-RPCSS-In-TCP
+    displayName: Moniteur d’événements distants (RPC-EPMAP)
+    localport: RPCEPMap
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: EventForwarder-In-TCP
+    displayName: Moniteur d’événements distants (RPC)
+    localport: RPC
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'False'
+  - name: DeliveryOptimization-UDP-In
+    displayName: Optimisation de livraison (UDP entrant)
+    localport: '7680'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: DeliveryOptimization-TCP-In
+    displayName: Optimisation de livraison (TCP entrant)
+    localport: '7680'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: Microsoft-Windows-Unified-Telemetry-Client
+    displayName: Expériences des utilisateurs connectés et télémétrie
+    localport: Any
+    remoteport: '443'
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: SNMPTRAP-In-UDP-NoScope
+    displayName: Service d’interruption SNMP (UDP entrant)
+    localport: '162'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain
+    state: present
+    enabled: 'False'
+  - name: SNMPTRAP-In-UDP
+    displayName: Service d’interruption SNMP (UDP entrant)
+    localport: '162'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Private, Public
+    state: present
+    enabled: 'False'
+  - name: '{58061864-8958-4CD6-9FC9-AF4B1F3332BA}'
+    displayName: winrm
+    localport: '5986'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: '{D5DD8718-6339-4B9C-B4E4-CFA9CC6BB336}'
+    displayName: winrm_udp
+    localport: '5986'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: '{90ED1AAA-93DB-4667-8119-9938C4DE5795}'
+    displayName: Allow WinRM HTTPS
+    localport: '5986'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: WMPNSS-RME-HTTP-In-TCP
+    displayName: Service de partage réseau du Lecteur Windows Media (HTTP-Diffusion
+      en continu-Entrée)
+    localport: '10245'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private
+    state: present
+    enabled: 'False'
+  - name: '{1439B534-0231-4488-A1C8-55A397B0DF16}'
+    displayName: Serveur de diffusion en continu sur un appareil (RTSP-Diffusion en
+      continu-Entrée)
+    localport:
+      value:
+        - '23554'
+        - '23555'
+        - '23556'
+      Count: 3
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Public
+    state: present
+    enabled: 'True'
+  - name: ANSIBLE-TEST-RULE
+    displayName: Ansible default win_firewall_rule displayname
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Public
+    state: present
+    enabled: 'False'
+  - name: MSMQ-In-TCP
+    displayName: TCP Message Queuing entrant
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: MSMQ-Out-TCP
+    displayName: TCP Message Queuing sortant
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: MSMQ-In-UDP
+    displayName: UDP Message Queuing entrant
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: MSMQ-Out-UDP
+    displayName: UDP Message Queuing sortant
+    localport: Any
+    remoteport: Any
+    action: Allow
+    direction: Out
+    protocol: UDP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: IIS-WebServerRole-HTTP-In-TCP
+    displayName: Services World Wide Web (trafic HTTP-entrant)
+    localport: '80'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: IIS-WebServerRole-HTTPS-In-TCP
+    displayName: Services World Wide Web (trafic HTTPS-entrant)
+    localport: '443'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
+  - name: WCF-NetTcpActivator-In-TCP-64bit
+    displayName: Adaptateur d'écouteur Windows Communication Foundation Net.TCP (TCP-In)
+    localport: '808'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Domain, Private, Public
+    state: present
+    enabled: 'True'
