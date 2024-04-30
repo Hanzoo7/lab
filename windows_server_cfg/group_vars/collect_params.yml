@@ -1,8 +1,1 @@
 directory: ../files
-
-collect : 
-#  - services
-#  - features
-  - partitions
-#  - softwares
-#  - firewall
