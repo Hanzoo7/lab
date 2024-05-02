@@ -1,8 +1,11 @@
 ---
 - hosts: windows
-  gather_facts: false
-  become_method: runas
+  gather_facts: true
+  become_method: false
   
+  collections:
+    - hanzoo7.windows
+
   vars_files:
     - ../vaults/windows_ensure
     - ../group_vars/collect_params.yml
@@ -11,16 +14,17 @@
     - name: load configuration file
       include_vars:
         file: "{{ directory }}/{{ inventory_hostname }}.yml"
-
+    
     - name : ensure partitions
-      community.windows.win_partition:
-        drive_letter: "{{ item.drive_letter }}"
-        partition_size: "{{ item.partition_size_in_bytes | default(item.partition_size) | default(-1)}}"
+      hanzoo7.windows.win_partitions:
         disk_number: "{{ item.disk_number }}"
         partition_number: "{{ item.partition_number }}"
+        DriveLetter: "{{ item.DriveLetter }}"
+        FileSystem: "{{ item.FileSystem }}"
+        FileSystemLabel: "{{ item.FileSystemLabel }}"
+        Size: "{{ item.Size }}"
         state: "{{ item.state }}"
       with_list: "{{ partitions }}"
 
-      
 
         

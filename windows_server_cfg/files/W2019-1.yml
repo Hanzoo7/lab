@@ -296,25 +296,13 @@ features:
   - Name: XPS-Viewer
     state: present
 partitions:
-  - drive_letter: E
-    FileSystem: ''
-    FileSystemLabel: ''
-    partition_size: 0 GiB
-    partition_size_in_bytes: 0 B
-    Used: 0 GiB
-    SizeRemaining: 0 GiB
-    Used%: 0 %
-    disk_number: 1
-    partition_number: 2
-    state: present
-  - drive_letter: C
+  - DriveLetter: C
     FileSystem: NTFS
     FileSystemLabel: ''
-    partition_size: 99.46 GiB
-    partition_size_in_bytes: 106796412928 B
-    Used: 11.15 GiB
-    SizeRemaining: 88.31 GiB
-    Used%: 11.21 %
+    Size: 99.46 GB
+    Used: 11.9 GB
+    SizeRemaining: 87.56 GB
+    Used%: 11.97 %
     disk_number: 0
     partition_number: 2
     state: present
