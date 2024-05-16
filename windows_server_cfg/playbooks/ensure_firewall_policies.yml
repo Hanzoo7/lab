@@ -16,7 +16,9 @@
         file: "{{ directory }}/{{ inventory_hostname }}.yml"
     
     - name : ensure firewall policies
-      hanzoo7.windows.win_firewall_rules:
+      include_role:
+        name: win_firewall_rule
+      vars:
         name: "{{ item.name }}"
         displayName: "{{ item.displayName }}"
         localport: "{{ item.localport }}"

@@ -1,13 +1,13 @@
 directory: ../files
 
 collect : 
-#  services:
-#    where: status -eq 4
-#  features:
-#    where: InstallState -eq 1
+  services:
+    where: status -eq 4
+  features:
+    where: InstallState -eq 1
   partitions:
     where: DriveType -eq "Fixed" | ? FileSystemLabel -ne "Réservé au système"
-#  softwares:
-#    where:  
-#  firewall:
-#    where: enabled -eq $true
+  softwares:
+    where:  
+  firewall:
+    where: enabled -eq $true

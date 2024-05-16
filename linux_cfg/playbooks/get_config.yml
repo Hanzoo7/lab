@@ -1,13 +1,13 @@
 ---
 - hosts: linux
-  gather_facts: false
+  gather_facts: true
   serial: 1
 
   collections:
     - hanzoo7.reporting
   
   vars_files:
-    - ../group_vars/hostConfigDirectory.yml
+    - ../group_vars/collect_params.yml
 
   tasks:
     - include_role:

@@ -1,0 +1,15 @@
+directory: ../files
+
+get_config:
+  services:
+    enabled: true
+    filter: 
+  packages:
+    enabled: false
+    filter: 
+  partitions:
+    enabled: false
+    filter: 
+  firewall:
+    enabled: false
+    filter:

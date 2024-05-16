@@ -1,0 +1,1028 @@
+services:
+  - line: '  UNIT                                                  LOAD      ACTIVE   SUB     DESCRIPTION'
+    name: '  UNIT                                                  LOAD      ACTIVE   SUB     DESCRIPTION'
+    description: null
+    status: null
+    active: null
+  - line: '  accounts-daemon.service                               loaded    active   running
+      Accounts Service'
+    name: '  accounts-daemon.service                               loaded    active   running
+      Accounts Service'
+    description: null
+    status: null
+    active: null
+  - line: '  acpid.service                                         loaded    active   running
+      ACPI event daemon'
+    name: '  acpid.service                                         loaded    active   running
+      ACPI event daemon'
+    description: null
+    status: null
+    active: null
+  - line: '  alsa-restore.service                                  loaded    active   exited  Save/Restore
+      Sound Card State'
+    name: '  alsa-restore.service                                  loaded    active   exited  Save/Restore
+      Sound Card State'
+    description: null
+    status: null
+    active: null
+  - line: '  alsa-state.service                                    loaded    inactive
+      dead    Manage Sound Card State (restore and store)'
+    name: '  alsa-state.service                                    loaded    inactive
+      dead    Manage Sound Card State (restore and store)'
+    description: null
+    status: null
+    active: null
+  - line: '  anacron.service                                       loaded    inactive
+      dead    Run anacron jobs'
+    name: '  anacron.service                                       loaded    inactive
+      dead    Run anacron jobs'
+    description: null
+    status: null
+    active: null
+  - line: '  apparmor.service                                      loaded    active   exited  Load
+      AppArmor profiles'
+    name: '  apparmor.service                                      loaded    active   exited  Load
+      AppArmor profiles'
+    description: null
+    status: null
+    active: null
+  - line: '  apport-autoreport.service                             loaded    inactive
+      dead    Process error reports when automatic reporting is enabled'
+    name: '  apport-autoreport.service                             loaded    inactive
+      dead    Process error reports when automatic reporting is enabled'
+    description: null
+    status: null
+    active: null
+  - line: '  apport.service                                        loaded    active   exited  LSB:
+      automatic crash report generation'
+    name: '  apport.service                                        loaded    active   exited  LSB:
+      automatic crash report generation'
+    description: null
+    status: null
+    active: null
+  - line: '  apt-daily-upgrade.service                             loaded    inactive
+      dead    Daily apt upgrade and clean activities'
+    name: '  apt-daily-upgrade.service                             loaded    inactive
+      dead    Daily apt upgrade and clean activities'
+    description: null
+    status: null
+    active: null
+  - line: '  apt-daily.service                                     loaded    inactive
+      dead    Daily apt download activities'
+    name: '  apt-daily.service                                     loaded    inactive
+      dead    Daily apt download activities'
+    description: null
+    status: null
+    active: null
+  - line: ● auditd.service                                        not-found inactive
+      dead    auditd.service
+    name: ● auditd.service                                        not-found inactive
+      dead    auditd.service
+    description: null
+    status: null
+    active: null
+  - line: ● auto-cpufreq.service                                  not-found inactive
+      dead    auto-cpufreq.service
+    name: ● auto-cpufreq.service                                  not-found inactive
+      dead    auto-cpufreq.service
+    description: null
+    status: null
+    active: null
+  - line: '  avahi-daemon.service                                  loaded    active   running
+      Avahi mDNS/DNS-SD Stack'
+    name: '  avahi-daemon.service                                  loaded    active   running
+      Avahi mDNS/DNS-SD Stack'
+    description: null
+    status: null
+    active: null
+  - line: ● cloud-config.service                                  not-found inactive
+      dead    cloud-config.service
+    name: ● cloud-config.service                                  not-found inactive
+      dead    cloud-config.service
+    description: null
+    status: null
+    active: null
+  - line: ● cloud-init-local.service                              not-found inactive
+      dead    cloud-init-local.service
+    name: ● cloud-init-local.service                              not-found inactive
+      dead    cloud-init-local.service
+    description: null
+    status: null
+    active: null
+  - line: '  colord.service                                        loaded    active   running
+      Manage, Install and Generate Color Profiles'
+    name: '  colord.service                                        loaded    active   running
+      Manage, Install and Generate Color Profiles'
+    description: null
+    status: null
+    active: null
+  - line: ● connman.service                                       not-found inactive
+      dead    connman.service
+    name: ● connman.service                                       not-found inactive
+      dead    connman.service
+    description: null
+    status: null
+    active: null
+  - line: ● console-screen.service                                not-found inactive
+      dead    console-screen.service
+    name: ● console-screen.service                                not-found inactive
+      dead    console-screen.service
+    description: null
+    status: null
+    active: null
+  - line: '  console-setup.service                                 loaded    active   exited  Set
+      console font and keymap'
+    name: '  console-setup.service                                 loaded    active   exited  Set
+      console font and keymap'
+    description: null
+    status: null
+    active: null
+  - line: '  cron.service                                          loaded    active   running
+      Regular background program processing daemon'
+    name: '  cron.service                                          loaded    active   running
+      Regular background program processing daemon'
+    description: null
+    status: null
+    active: null
+  - line: '  cups-browsed.service                                  loaded    active   running
+      Make remote CUPS printers available locally'
+    name: '  cups-browsed.service                                  loaded    active   running
+      Make remote CUPS printers available locally'
+    description: null
+    status: null
+    active: null
+  - line: '  cups.service                                          loaded    active   running
+      CUPS Scheduler'
+    name: '  cups.service                                          loaded    active   running
+      CUPS Scheduler'
+    description: null
+    status: null
+    active: null
+  - line: '  dbus.service                                          loaded    active   running
+      D-Bus System Message Bus'
+    name: '  dbus.service                                          loaded    active   running
+      D-Bus System Message Bus'
+    description: null
+    status: null
+    active: null
+  - line: '  dmesg.service                                         loaded    inactive
+      dead    Save initial kernel messages after boot'
+    name: '  dmesg.service                                         loaded    inactive
+      dead    Save initial kernel messages after boot'
+    description: null
+    status: null
+    active: null
+  - line: '  dpkg-db-backup.service                                loaded    inactive
+      dead    Daily dpkg database backup service'
+    name: '  dpkg-db-backup.service                                loaded    inactive
+      dead    Daily dpkg database backup service'
+    description: null
+    status: null
+    active: null
+  - line: '  e2scrub_all.service                                   loaded    inactive
+      dead    Online ext4 Metadata Check for All Filesystems'
+    name: '  e2scrub_all.service                                   loaded    inactive
+      dead    Online ext4 Metadata Check for All Filesystems'
+    description: null
+    status: null
+    active: null
+  - line: '  e2scrub_reap.service                                  loaded    inactive
+      dead    Remove Stale Online ext4 Metadata Check Snapshots'
+    name: '  e2scrub_reap.service                                  loaded    inactive
+      dead    Remove Stale Online ext4 Metadata Check Snapshots'
+    description: null
+    status: null
+    active: null
+  - line: '  emergency.service                                     loaded    inactive
+      dead    Emergency Shell'
+    name: '  emergency.service                                     loaded    inactive
+      dead    Emergency Shell'
+    description: null
+    status: null
+    active: null
+  - line: '  fstrim.service                                        loaded    inactive
+      dead    Discard unused blocks on filesystems from /etc/fstab'
+    name: '  fstrim.service                                        loaded    inactive
+      dead    Discard unused blocks on filesystems from /etc/fstab'
+    description: null
+    status: null
+    active: null
+  - line: ● fwupd-refresh.service                                 loaded    failed   failed  Refresh
+      fwupd metadata and update motd
+    name: ● fwupd-refresh.service                                 loaded    failed   failed  Refresh
+      fwupd metadata and update motd
+    description: null
+    status: null
+    active: null
+  - line: '  gdm.service                                           loaded    active   running
+      GNOME Display Manager'
+    name: '  gdm.service                                           loaded    active   running
+      GNOME Display Manager'
+    description: null
+    status: null
+    active: null
+  - line: '  getty-static.service                                  loaded    inactive
+      dead    getty on tty2-tty6 if dbus and logind are not available'
+    name: '  getty-static.service                                  loaded    inactive
+      dead    getty on tty2-tty6 if dbus and logind are not available'
+    description: null
+    status: null
+    active: null
+  - line: '  getty@tty1.service                                    loaded    inactive
+      dead    Getty on tty1'
+    name: '  getty@tty1.service                                    loaded    inactive
+      dead    Getty on tty1'
+    description: null
+    status: null
+    active: null
+  - line: '  gpu-manager.service                                   loaded    inactive
+      dead    Detect the available GPUs and deal with any system changes'
+    name: '  gpu-manager.service                                   loaded    inactive
+      dead    Detect the available GPUs and deal with any system changes'
+    description: null
+    status: null
+    active: null
+  - line: '  grub-common.service                                   loaded    inactive
+      dead    Record successful boot for GRUB'
+    name: '  grub-common.service                                   loaded    inactive
+      dead    Record successful boot for GRUB'
+    description: null
+    status: null
+    active: null
+  - line: '  grub-initrd-fallback.service                          loaded    inactive
+      dead    GRUB failed boot detection'
+    name: '  grub-initrd-fallback.service                          loaded    inactive
+      dead    GRUB failed boot detection'
+    description: null
+    status: null
+    active: null
+  - line: '  irqbalance.service                                    loaded    active   running
+      irqbalance daemon'
+    name: '  irqbalance.service                                    loaded    active   running
+      irqbalance daemon'
+    description: null
+    status: null
+    active: null
+  - line: ● kbd.service                                           not-found inactive
+      dead    kbd.service
+    name: ● kbd.service                                           not-found inactive
+      dead    kbd.service
+    description: null
+    status: null
+    active: null
+  - line: '  kerneloops.service                                    loaded    active   running
+      Tool to automatically collect and submit kernel crash signatures'
+    name: '  kerneloops.service                                    loaded    active   running
+      Tool to automatically collect and submit kernel crash signatures'
+    description: null
+    status: null
+    active: null
+  - line: '  keyboard-setup.service                                loaded    active   exited  Set
+      the console keyboard layout'
+    name: '  keyboard-setup.service                                loaded    active   exited  Set
+      the console keyboard layout'
+    description: null
+    status: null
+    active: null
+  - line: '  kmod-static-nodes.service                             loaded    active   exited  Create
+      List of Static Device Nodes'
+    name: '  kmod-static-nodes.service                             loaded    active   exited  Create
+      List of Static Device Nodes'
+    description: null
+    status: null
+    active: null
+  - line: '  logrotate.service                                     loaded    inactive
+      dead    Rotate log files'
+    name: '  logrotate.service                                     loaded    inactive
+      dead    Rotate log files'
+    description: null
+    status: null
+    active: null
+  - line: '  man-db.service                                        loaded    inactive
+      dead    Daily man-db regeneration'
+    name: '  man-db.service                                        loaded    inactive
+      dead    Daily man-db regeneration'
+    description: null
+    status: null
+    active: null
+  - line: '  ModemManager.service                                  loaded    active   running
+      Modem Manager'
+    name: '  ModemManager.service                                  loaded    active   running
+      Modem Manager'
+    description: null
+    status: null
+    active: null
+  - line: '  modprobe@configfs.service                             loaded    inactive
+      dead    Load Kernel Module configfs'
+    name: '  modprobe@configfs.service                             loaded    inactive
+      dead    Load Kernel Module configfs'
+    description: null
+    status: null
+    active: null
+  - line: '  modprobe@drm.service                                  loaded    inactive
+      dead    Load Kernel Module drm'
+    name: '  modprobe@drm.service                                  loaded    inactive
+      dead    Load Kernel Module drm'
+    description: null
+    status: null
+    active: null
+  - line: '  modprobe@efi_pstore.service                           loaded    inactive
+      dead    Load Kernel Module efi_pstore'
+    name: '  modprobe@efi_pstore.service                           loaded    inactive
+      dead    Load Kernel Module efi_pstore'
+    description: null
+    status: null
+    active: null
+  - line: '  modprobe@fuse.service                                 loaded    inactive
+      dead    Load Kernel Module fuse'
+    name: '  modprobe@fuse.service                                 loaded    inactive
+      dead    Load Kernel Module fuse'
+    description: null
+    status: null
+    active: null
+  - line: '  motd-news.service                                     loaded    inactive
+      dead    Message of the Day'
+    name: '  motd-news.service                                     loaded    inactive
+      dead    Message of the Day'
+    description: null
+    status: null
+    active: null
+  - line: '  netplan-ovs-cleanup.service                           loaded    inactive
+      dead    OpenVSwitch configuration for cleanup'
+    name: '  netplan-ovs-cleanup.service                           loaded    inactive
+      dead    OpenVSwitch configuration for cleanup'
+    description: null
+    status: null
+    active: null
+  - line: '  networkd-dispatcher.service                           loaded    active   running
+      Dispatcher daemon for systemd-networkd'
+    name: '  networkd-dispatcher.service                           loaded    active   running
+      Dispatcher daemon for systemd-networkd'
+    description: null
+    status: null
+    active: null
+  - line: '  NetworkManager-wait-online.service                    loaded    active   exited  Network
+      Manager Wait Online'
+    name: '  NetworkManager-wait-online.service                    loaded    active   exited  Network
+      Manager Wait Online'
+    description: null
+    status: null
+    active: null
+  - line: '  NetworkManager.service                                loaded    active   running
+      Network Manager'
+    name: '  NetworkManager.service                                loaded    active   running
+      Network Manager'
+    description: null
+    status: null
+    active: null
+  - line: ● nslcd.service                                         not-found inactive
+      dead    nslcd.service
+    name: ● nslcd.service                                         not-found inactive
+      dead    nslcd.service
+    description: null
+    status: null
+    active: null
+  - line: ● oem-config.service                                    not-found inactive
+      dead    oem-config.service
+    name: ● oem-config.service                                    not-found inactive
+      dead    oem-config.service
+    description: null
+    status: null
+    active: null
+  - line: '  open-vm-tools.service                                 loaded    inactive
+      dead    Service for virtual machines hosted on VMware'
+    name: '  open-vm-tools.service                                 loaded    inactive
+      dead    Service for virtual machines hosted on VMware'
+    description: null
+    status: null
+    active: null
+  - line: '  openvpn.service                                       loaded    active   exited  OpenVPN
+      service'
+    name: '  openvpn.service                                       loaded    active   exited  OpenVPN
+      service'
+    description: null
+    status: null
+    active: null
+  - line: ● ovsdb-server.service                                  not-found inactive
+      dead    ovsdb-server.service
+    name: ● ovsdb-server.service                                  not-found inactive
+      dead    ovsdb-server.service
+    description: null
+    status: null
+    active: null
+  - line: '  packagekit.service                                    loaded    active   running
+      PackageKit Daemon'
+    name: '  packagekit.service                                    loaded    active   running
+      PackageKit Daemon'
+    description: null
+    status: null
+    active: null
+  - line: '  plymouth-quit-wait.service                            loaded    active   exited  Hold
+      until boot process finishes up'
+    name: '  plymouth-quit-wait.service                            loaded    active   exited  Hold
+      until boot process finishes up'
+    description: null
+    status: null
+    active: null
+  - line: '  plymouth-quit.service                                 loaded    inactive
+      dead    Terminate Plymouth Boot Screen'
+    name: '  plymouth-quit.service                                 loaded    inactive
+      dead    Terminate Plymouth Boot Screen'
+    description: null
+    status: null
+    active: null
+  - line: '  plymouth-read-write.service                           loaded    active   exited  Tell
+      Plymouth To Write Out Runtime Data'
+    name: '  plymouth-read-write.service                           loaded    active   exited  Tell
+      Plymouth To Write Out Runtime Data'
+    description: null
+    status: null
+    active: null
+  - line: '  plymouth-start.service                                loaded    active   exited  Show
+      Plymouth Boot Screen'
+    name: '  plymouth-start.service                                loaded    active   exited  Show
+      Plymouth Boot Screen'
+    description: null
+    status: null
+    active: null
+  - line: '  polkit.service                                        loaded    active   running
+      Authorization Manager'
+    name: '  polkit.service                                        loaded    active   running
+      Authorization Manager'
+    description: null
+    status: null
+    active: null
+  - line: '  power-profiles-daemon.service                         loaded    active   running
+      Power Profiles daemon'
+    name: '  power-profiles-daemon.service                         loaded    active   running
+      Power Profiles daemon'
+    description: null
+    status: null
+    active: null
+  - line: '  rc-local.service                                      loaded    inactive
+      dead    /etc/rc.local Compatibility'
+    name: '  rc-local.service                                      loaded    inactive
+      dead    /etc/rc.local Compatibility'
+    description: null
+    status: null
+    active: null
+  - line: '  rescue.service                                        loaded    inactive
+      dead    Rescue Shell'
+    name: '  rescue.service                                        loaded    inactive
+      dead    Rescue Shell'
+    description: null
+    status: null
+    active: null
+  - line: '  rsyslog.service                                       loaded    active   running
+      System Logging Service'
+    name: '  rsyslog.service                                       loaded    active   running
+      System Logging Service'
+    description: null
+    status: null
+    active: null
+  - line: '  rtkit-daemon.service                                  loaded    active   running
+      RealtimeKit Scheduling Policy Service'
+    name: '  rtkit-daemon.service                                  loaded    active   running
+      RealtimeKit Scheduling Policy Service'
+    description: null
+    status: null
+    active: null
+  - line: '  secureboot-db.service                                 loaded    inactive
+      dead    Secure Boot updates for DB and DBX'
+    name: '  secureboot-db.service                                 loaded    inactive
+      dead    Secure Boot updates for DB and DBX'
+    description: null
+    status: null
+    active: null
+  - line: '  setvtrgb.service                                      loaded    active   exited  Set
+      console scheme'
+    name: '  setvtrgb.service                                      loaded    active   exited  Set
+      console scheme'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.aa-prompt-listener.service                      loaded    inactive
+      dead    Userspace listener for prompt events'
+    name: '  snapd.aa-prompt-listener.service                      loaded    inactive
+      dead    Userspace listener for prompt events'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.apparmor.service                                loaded    active   exited  Load
+      AppArmor profiles managed internally by snapd'
+    name: '  snapd.apparmor.service                                loaded    active   exited  Load
+      AppArmor profiles managed internally by snapd'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.autoimport.service                              loaded    inactive
+      dead    Auto import assertions from block devices'
+    name: '  snapd.autoimport.service                              loaded    inactive
+      dead    Auto import assertions from block devices'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.core-fixup.service                              loaded    inactive
+      dead    Automatically repair incorrect owner/permissions on core devices'
+    name: '  snapd.core-fixup.service                              loaded    inactive
+      dead    Automatically repair incorrect owner/permissions on core devices'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.failure.service                                 loaded    inactive
+      dead    Failure handling of the snapd snap'
+    name: '  snapd.failure.service                                 loaded    inactive
+      dead    Failure handling of the snapd snap'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.recovery-chooser-trigger.service                loaded    inactive
+      dead    Wait for the Ubuntu Core chooser trigger'
+    name: '  snapd.recovery-chooser-trigger.service                loaded    inactive
+      dead    Wait for the Ubuntu Core chooser trigger'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.seeded.service                                  loaded    active   exited  Wait
+      until snapd is fully seeded'
+    name: '  snapd.seeded.service                                  loaded    active   exited  Wait
+      until snapd is fully seeded'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.service                                         loaded    active   running
+      Snap Daemon'
+    name: '  snapd.service                                         loaded    active   running
+      Snap Daemon'
+    description: null
+    status: null
+    active: null
+  - line: '  snapd.snap-repair.service                             loaded    inactive
+      dead    Automatically fetch and run repair assertions'
+    name: '  snapd.snap-repair.service                             loaded    inactive
+      dead    Automatically fetch and run repair assertions'
+    description: null
+    status: null
+    active: null
+  - line: '  ssh.service                                           loaded    active   running
+      OpenBSD Secure Shell server'
+    name: '  ssh.service                                           loaded    active   running
+      OpenBSD Secure Shell server'
+    description: null
+    status: null
+    active: null
+  - line: '  switcheroo-control.service                            loaded    active   running
+      Switcheroo Control Proxy service'
+    name: '  switcheroo-control.service                            loaded    active   running
+      Switcheroo Control Proxy service'
+    description: null
+    status: null
+    active: null
+  - line: ● system76-power.service                                not-found inactive
+      dead    system76-power.service
+    name: ● system76-power.service                                not-found inactive
+      dead    system76-power.service
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-ask-password-console.service                  loaded    inactive
+      dead    Dispatch Password Requests to Console'
+    name: '  systemd-ask-password-console.service                  loaded    inactive
+      dead    Dispatch Password Requests to Console'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-ask-password-plymouth.service                 loaded    inactive
+      dead    Forward Password Requests to Plymouth'
+    name: '  systemd-ask-password-plymouth.service                 loaded    inactive
+      dead    Forward Password Requests to Plymouth'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-ask-password-wall.service                     loaded    inactive
+      dead    Forward Password Requests to Wall'
+    name: '  systemd-ask-password-wall.service                     loaded    inactive
+      dead    Forward Password Requests to Wall'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-binfmt.service                                loaded    active   exited  Set
+      Up Additional Binary Formats'
+    name: '  systemd-binfmt.service                                loaded    active   exited  Set
+      Up Additional Binary Formats'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-boot-system-token.service                     loaded    inactive
+      dead    Store a System Token in an EFI Variable'
+    name: '  systemd-boot-system-token.service                     loaded    inactive
+      dead    Store a System Token in an EFI Variable'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-fsck-root.service                             loaded    inactive
+      dead    File System Check on Root Device'
+    name: '  systemd-fsck-root.service                             loaded    inactive
+      dead    File System Check on Root Device'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-fsck@dev-disk-by\x2duuid-E4E3\x2d409D.service loaded    active   exited  File
+      System Check on /dev/disk/by-uuid/E4E3-409D'
+    name: '  systemd-fsck@dev-disk-by\x2duuid-E4E3\x2d409D.service loaded    active   exited  File
+      System Check on /dev/disk/by-uuid/E4E3-409D'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-fsckd.service                                 loaded    inactive
+      dead    File System Check Daemon to report status'
+    name: '  systemd-fsckd.service                                 loaded    inactive
+      dead    File System Check Daemon to report status'
+    description: null
+    status: null
+    active: null
+  - line: ● systemd-hwdb-update.service                           not-found inactive
+      dead    systemd-hwdb-update.service
+    name: ● systemd-hwdb-update.service                           not-found inactive
+      dead    systemd-hwdb-update.service
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-initctl.service                               loaded    inactive
+      dead    initctl Compatibility Daemon'
+    name: '  systemd-initctl.service                               loaded    inactive
+      dead    initctl Compatibility Daemon'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-journal-flush.service                         loaded    active   exited  Flush
+      Journal to Persistent Storage'
+    name: '  systemd-journal-flush.service                         loaded    active   exited  Flush
+      Journal to Persistent Storage'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-journald.service                              loaded    active   running
+      Journal Service'
+    name: '  systemd-journald.service                              loaded    active   running
+      Journal Service'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-logind.service                                loaded    active   running
+      User Login Management'
+    name: '  systemd-logind.service                                loaded    active   running
+      User Login Management'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-machine-id-commit.service                     loaded    inactive
+      dead    Commit a transient machine-id on disk'
+    name: '  systemd-machine-id-commit.service                     loaded    inactive
+      dead    Commit a transient machine-id on disk'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-modules-load.service                          loaded    active   exited  Load
+      Kernel Modules'
+    name: '  systemd-modules-load.service                          loaded    active   exited  Load
+      Kernel Modules'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-networkd.service                              loaded    inactive
+      dead    Network Configuration'
+    name: '  systemd-networkd.service                              loaded    inactive
+      dead    Network Configuration'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-oomd.service                                  loaded    active   running
+      Userspace Out-Of-Memory (OOM) Killer'
+    name: '  systemd-oomd.service                                  loaded    active   running
+      Userspace Out-Of-Memory (OOM) Killer'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-pstore.service                                loaded    inactive
+      dead    Platform Persistent Storage Archival'
+    name: '  systemd-pstore.service                                loaded    inactive
+      dead    Platform Persistent Storage Archival'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-quotacheck.service                            loaded    inactive
+      dead    File System Quota Check'
+    name: '  systemd-quotacheck.service                            loaded    inactive
+      dead    File System Quota Check'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-random-seed.service                           loaded    active   exited  Load/Save
+      Random Seed'
+    name: '  systemd-random-seed.service                           loaded    active   exited  Load/Save
+      Random Seed'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-remount-fs.service                            loaded    active   exited  Remount
+      Root and Kernel File Systems'
+    name: '  systemd-remount-fs.service                            loaded    active   exited  Remount
+      Root and Kernel File Systems'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-resolved.service                              loaded    active   running
+      Network Name Resolution'
+    name: '  systemd-resolved.service                              loaded    active   running
+      Network Name Resolution'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-rfkill.service                                loaded    inactive
+      dead    Load/Save RF Kill Switch Status'
+    name: '  systemd-rfkill.service                                loaded    inactive
+      dead    Load/Save RF Kill Switch Status'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-sysctl.service                                loaded    active   exited  Apply
+      Kernel Variables'
+    name: '  systemd-sysctl.service                                loaded    active   exited  Apply
+      Kernel Variables'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-sysusers.service                              loaded    active   exited  Create
+      System Users'
+    name: '  systemd-sysusers.service                              loaded    active   exited  Create
+      System Users'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-timesyncd.service                             loaded    active   running
+      Network Time Synchronization'
+    name: '  systemd-timesyncd.service                             loaded    active   running
+      Network Time Synchronization'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-tmpfiles-clean.service                        loaded    inactive
+      dead    Cleanup of Temporary Directories'
+    name: '  systemd-tmpfiles-clean.service                        loaded    inactive
+      dead    Cleanup of Temporary Directories'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-tmpfiles-setup-dev.service                    loaded    active   exited  Create
+      Static Device Nodes in /dev'
+    name: '  systemd-tmpfiles-setup-dev.service                    loaded    active   exited  Create
+      Static Device Nodes in /dev'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-tmpfiles-setup.service                        loaded    active   exited  Create
+      Volatile Files and Directories'
+    name: '  systemd-tmpfiles-setup.service                        loaded    active   exited  Create
+      Volatile Files and Directories'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-udev-trigger.service                          loaded    active   exited  Coldplug
+      All udev Devices'
+    name: '  systemd-udev-trigger.service                          loaded    active   exited  Coldplug
+      All udev Devices'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-udevd.service                                 loaded    active   running
+      Rule-based Manager for Device Events and Files'
+    name: '  systemd-udevd.service                                 loaded    active   running
+      Rule-based Manager for Device Events and Files'
+    description: null
+    status: null
+    active: null
+  - line: ● systemd-update-done.service                           not-found inactive
+      dead    systemd-update-done.service
+    name: ● systemd-update-done.service                           not-found inactive
+      dead    systemd-update-done.service
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-update-utmp-runlevel.service                  loaded    inactive
+      dead    Record Runlevel Change in UTMP'
+    name: '  systemd-update-utmp-runlevel.service                  loaded    inactive
+      dead    Record Runlevel Change in UTMP'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-update-utmp.service                           loaded    active   exited  Record
+      System Boot/Shutdown in UTMP'
+    name: '  systemd-update-utmp.service                           loaded    active   exited  Record
+      System Boot/Shutdown in UTMP'
+    description: null
+    status: null
+    active: null
+  - line: '  systemd-user-sessions.service                         loaded    active   exited  Permit
+      User Sessions'
+    name: '  systemd-user-sessions.service                         loaded    active   exited  Permit
+      User Sessions'
+    description: null
+    status: null
+    active: null
+  - line: ● systemd-vconsole-setup.service                        not-found inactive
+      dead    systemd-vconsole-setup.service
+    name: ● systemd-vconsole-setup.service                        not-found inactive
+      dead    systemd-vconsole-setup.service
+    description: null
+    status: null
+    active: null
+  - line: '  thermald.service                                      loaded    inactive
+      dead    Thermal Daemon Service'
+    name: '  thermald.service                                      loaded    inactive
+      dead    Thermal Daemon Service'
+    description: null
+    status: null
+    active: null
+  - line: ● tuned.service                                         not-found inactive
+      dead    tuned.service
+    name: ● tuned.service                                         not-found inactive
+      dead    tuned.service
+    description: null
+    status: null
+    active: null
+  - line: ● ua-auto-attach.service                                not-found inactive
+      dead    ua-auto-attach.service
+    name: ● ua-auto-attach.service                                not-found inactive
+      dead    ua-auto-attach.service
+    description: null
+    status: null
+    active: null
+  - line: '  ua-reboot-cmds.service                                loaded    inactive
+      dead    Ubuntu Pro reboot cmds'
+    name: '  ua-reboot-cmds.service                                loaded    inactive
+      dead    Ubuntu Pro reboot cmds'
+    description: null
+    status: null
+    active: null
+  - line: '  ua-timer.service                                      loaded    inactive
+      dead    Ubuntu Pro Timer for running repeated jobs'
+    name: '  ua-timer.service                                      loaded    inactive
+      dead    Ubuntu Pro Timer for running repeated jobs'
+    description: null
+    status: null
+    active: null
+  - line: ● ubuntu-advantage-cloud-id-shim.service                not-found inactive
+      dead    ubuntu-advantage-cloud-id-shim.service
+    name: ● ubuntu-advantage-cloud-id-shim.service                not-found inactive
+      dead    ubuntu-advantage-cloud-id-shim.service
+    description: null
+    status: null
+    active: null
+  - line: '  ubuntu-advantage.service                              loaded    inactive
+      dead    Ubuntu Pro Background Auto Attach'
+    name: '  ubuntu-advantage.service                              loaded    inactive
+      dead    Ubuntu Pro Background Auto Attach'
+    description: null
+    status: null
+    active: null
+  - line: '  udisks2.service                                       loaded    active   running
+      Disk Manager'
+    name: '  udisks2.service                                       loaded    active   running
+      Disk Manager'
+    description: null
+    status: null
+    active: null
+  - line: '  ufw.service                                           loaded    active   exited  Uncomplicated
+      firewall'
+    name: '  ufw.service                                           loaded    active   exited  Uncomplicated
+      firewall'
+    description: null
+    status: null
+    active: null
+  - line: '  unattended-upgrades.service                           loaded    active   running
+      Unattended Upgrades Shutdown'
+    name: '  unattended-upgrades.service                           loaded    active   running
+      Unattended Upgrades Shutdown'
+    description: null
+    status: null
+    active: null
+  - line: '  update-notifier-download.service                      loaded    inactive
+      dead    Download data for packages that failed at package install time'
+    name: '  update-notifier-download.service                      loaded    inactive
+      dead    Download data for packages that failed at package install time'
+    description: null
+    status: null
+    active: null
+  - line: '  update-notifier-motd.service                          loaded    inactive
+      dead    Check to see whether there is a new version of Ubuntu available'
+    name: '  update-notifier-motd.service                          loaded    inactive
+      dead    Check to see whether there is a new version of Ubuntu available'
+    description: null
+    status: null
+    active: null
+  - line: '  upower.service                                        loaded    active   running
+      Daemon for power management'
+    name: '  upower.service                                        loaded    active   running
+      Daemon for power management'
+    description: null
+    status: null
+    active: null
+  - line: '  user-runtime-dir@1000.service                         loaded    active   exited  User
+      Runtime Directory /run/user/1000'
+    name: '  user-runtime-dir@1000.service                         loaded    active   exited  User
+      Runtime Directory /run/user/1000'
+    description: null
+    status: null
+    active: null
+  - line: '  user-runtime-dir@128.service                          loaded    active   exited  User
+      Runtime Directory /run/user/128'
+    name: '  user-runtime-dir@128.service                          loaded    active   exited  User
+      Runtime Directory /run/user/128'
+    description: null
+    status: null
+    active: null
+  - line: '  user@1000.service                                     loaded    active   running
+      User Manager for UID 1000'
+    name: '  user@1000.service                                     loaded    active   running
+      User Manager for UID 1000'
+    description: null
+    status: null
+    active: null
+  - line: '  user@128.service                                      loaded    active   running
+      User Manager for UID 128'
+    name: '  user@128.service                                      loaded    active   running
+      User Manager for UID 128'
+    description: null
+    status: null
+    active: null
+  - line: '  uuidd.service                                         loaded    inactive
+      dead    Daemon for generating UUIDs'
+    name: '  uuidd.service                                         loaded    inactive
+      dead    Daemon for generating UUIDs'
+    description: null
+    status: null
+    active: null
+  - line: '  vgauth.service                                        loaded    inactive
+      dead    Authentication service for virtual machines hosted on VMware'
+    name: '  vgauth.service                                        loaded    inactive
+      dead    Authentication service for virtual machines hosted on VMware'
+    description: null
+    status: null
+    active: null
+  - line: '  whoopsie.service                                      loaded    inactive
+      dead    crash report submission'
+    name: '  whoopsie.service                                      loaded    inactive
+      dead    crash report submission'
+    description: null
+    status: null
+    active: null
+  - line: '  wpa_supplicant.service                                loaded    active   running
+      WPA supplicant'
+    name: '  wpa_supplicant.service                                loaded    active   running
+      WPA supplicant'
+    description: null
+    status: null
+    active: null
+  - line: ● zfs-mount.service                                     not-found inactive
+      dead    zfs-mount.service
+    name: ● zfs-mount.service                                     not-found inactive
+      dead    zfs-mount.service
+    description: null
+    status: null
+    active: null
+  - line: ''
+    name: ''
+    description: null
+    status: null
+    active: null
+  - line: LOAD   = Reflects whether the unit definition was properly loaded.
+    name: LOAD   = Reflects whether the unit definition was properly loaded.
+    description: null
+    status: null
+    active: null
+  - line: ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+    name: ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+    description: null
+    status: null
+    active: null
+  - line: SUB    = The low-level unit activation state, values depend on unit type.
+    name: SUB    = The low-level unit activation state, values depend on unit type.
+    description: null
+    status: null
+    active: null
+  - line: 141 loaded units listed.
+    name: 141 loaded units listed.
+    description: null
+    status: null
+    active: null
+  - line: To show all installed unit files use 'systemctl list-unit-files'.
+    name: To show all installed unit files use 'systemctl list-unit-files'.
+    description: null
+    status: null
+    active: null
+  - line: ''
+    name: ''
+    description: null
+    status: null
+    active: null

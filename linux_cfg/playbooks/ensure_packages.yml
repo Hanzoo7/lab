@@ -1,0 +1,25 @@
+---
+- hosts: linux
+  gather_facts: false
+  become: yes
+
+  collections:
+    - hanzoo7.linux
+
+  vars_files:
+    - ../group_vars/collect_params.yml
+
+  tasks:
+    - name: load configuration file
+      include_vars:
+        file: "{{ directory }}/{{ inventory_hostname }}.yml"
+    
+    - name : ensure packages
+      include_role:
+        name: packages
+      vars:
+        name: "{{ item.name }}"
+        version: "{{ item.version }}"
+        is_installed: "{{ item.is_installed }}"
+      with_list: "{{ packages }}"
+

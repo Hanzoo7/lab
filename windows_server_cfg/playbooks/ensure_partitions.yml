@@ -16,7 +16,9 @@
         file: "{{ directory }}/{{ inventory_hostname }}.yml"
     
     - name : ensure partitions
-      hanzoo7.windows.win_partitions:
+      include_role:
+        name: win_partitions
+      vars:
         disk_number: "{{ item.disk_number }}"
         partition_number: "{{ item.partition_number }}"
         DriveLetter: "{{ item.DriveLetter }}"
