@@ -3,13 +3,10 @@ directory: ../files
 get_config:
   services:
     enabled: true
-    filter: 
+    filter: resources[-1]['active'] == 'active'
   packages:
-    enabled: false
-    filter: 
+    enabled: true
+    filter: resources[-1]['is_installed'] == True
   partitions:
-    enabled: false
-    filter: 
-  firewall:
-    enabled: false
-    filter:
+    enabled: true
+    filter: re.match("^/dev/sd.*$",resources[-1]['device'])
