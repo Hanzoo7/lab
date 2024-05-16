@@ -3,7 +3,7 @@ directory: ../files
 get_config : 
   services: 
     enabled: true
-    filter: #status -eq 4
+    filter: status -eq 4
   features:
     enabled: true
     filter: InstallState -eq 1

@@ -188,7 +188,7 @@ services:
 packages:
   - name: tree
     version: latest
-    is_installed: true
+    is_installed: false
 partitions:
   - mount: /
     device: /dev/sda3

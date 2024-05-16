@@ -1,0 +1,30 @@
+services:
+  - name: Audiosrv
+    DisplayName: Audio Windows
+    state: Started
+features:
+  - name: RemoteAccess
+    state: present
+partitions:
+  - DriveLetter: E
+    FileSystem: NTFS
+    Size: 49.98 GB
+    disk_number: 1
+    partition_number: 2
+    state: present
+softwares:
+  name: Oracle VM VirtualBox Guest Additions 7.0.14
+  Version: 7.0.14.161095
+  InstallLocation: null
+  Publisher: Oracle and/or its affiliates
+firewall_policies:
+  - name: supertest
+    displayName: test
+    localport: '8888'
+    remoteport: Any
+    action: Allow
+    direction: In
+    protocol: TCP
+    profiles: Any
+    state: present
+    enabled: 'False'

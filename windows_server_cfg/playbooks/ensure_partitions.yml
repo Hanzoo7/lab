@@ -23,7 +23,7 @@
         partition_number: "{{ item.partition_number }}"
         DriveLetter: "{{ item.DriveLetter }}"
         FileSystem: "{{ item.FileSystem }}"
-        FileSystemLabel: "{{ item.FileSystemLabel }}"
+        #FileSystemLabel: "{{ item.FileSystemLabel }}"
         Size: "{{ item.Size }}"
         state: "{{ item.state }}"
       with_list: "{{ partitions }}"

@@ -14,7 +14,7 @@
     
     - name : ensure features
       ansible.windows.win_feature:
-        name: "{{ item.Name }}"
+        name: "{{ item.name }}"
         state: "{{ item.state }}"
       with_list: "{{ features }}"
 
