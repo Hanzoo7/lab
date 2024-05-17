@@ -1,0 +1,15 @@
+directory: ../files
+
+get_config : 
+  domain: 
+    enabled: true
+    filter: 
+  groups:
+    enabled: true
+    filter: 
+  users:
+    enabled: true
+    filter:     
+  computers:
+    enabled: true
+    filter:  

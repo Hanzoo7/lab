@@ -1,0 +1,16 @@
+---
+- hosts: windows
+  gather_facts: false
+  serial: 1
+
+  collections:
+    - hanzoo7.reporting
+  
+  vars_files:
+    - ../vaults/windows_collect
+    - ../group_vars/collect_params.yml
+
+  tasks:
+    - include_role:
+        name: activeDirectoryGetConfig
+        

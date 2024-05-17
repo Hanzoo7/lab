@@ -1,0 +1,6 @@
+windows_ssh_user: devopsadmin
+windows_ssh_pass: P@ssw0rd4SOLEX30
+windows_ssh_port: 5986
+windows_connection: winrm
+windows_winrm_transport: basic
+windows_winrm_server_cert_validation: ignore

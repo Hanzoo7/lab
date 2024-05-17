@@ -1,0 +1,24 @@
+---
+- hosts: windows
+  gather_facts: true
+  become_method: false
+  
+  collections:
+    - hanzoo7.windows
+
+  vars_files:
+    - ../vaults/windows_ensure
+    - ../group_vars/collect_params.yml
+
+  tasks:
+    #- name: load configuration file
+    #  include_vars:
+    #    file: "{{ directory }}/{{ inventory_hostname }}.yml"
+    
+    - name : ensure server configuration
+      include_role:
+        name: win_server_config
+
+
+
+        
