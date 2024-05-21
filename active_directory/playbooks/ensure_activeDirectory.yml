@@ -2,22 +2,16 @@
 - hosts: windows
   gather_facts: false
   become_method: runas
+  ignore_errors: yes
   
+  collections:
+    - hanzoo7.windows  
+
   vars_files:
     - ../vaults/windows_ensure
-    - ../files/adds.yml
+  #  - ../files/adds.yml
 
   tasks:
-    - name: debug
-      debug:
-        msg : "{{ domain }}"
-
     - name : ensure active directory
-      ansible.windows.win_domain:
-        dns_domain_name: "{{ domain.Name }}"
-        safe_mode_password: "{{ safe_mode_password }}"
-        domain_netbios_name : "{{ domain.NetBIOSName }}"
-        database_path: "{{ domain.DatabasePath }}"
-        sysvol_path: "{{ domain.SysvolPath  }}"
-
-## CREATE ROLE
+      include_role:
+        name: ad_config

@@ -329,7 +329,7 @@ users:
     PasswordNeverExpires: true
     Description: null
     EmailAddress: null
-    lastLogon: 17/05/2024 16:39:56
+    lastLogon: 21/05/2024 17:48:15
   - Name: krbtgt
     DistinguishedName: CN=krbtgt,CN=Users,DC=devopslab,DC=org
     GivenName: null

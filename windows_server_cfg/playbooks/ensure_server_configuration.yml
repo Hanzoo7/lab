@@ -1,7 +1,8 @@
 ---
 - hosts: windows
   gather_facts: true
-  become_method: false
+  become_method: runas
+  ignore_errors: yes
   
   collections:
     - hanzoo7.windows
@@ -11,9 +12,9 @@
     - ../group_vars/collect_params.yml
 
   tasks:
-    #- name: load configuration file
-    #  include_vars:
-    #    file: "{{ directory }}/{{ inventory_hostname }}.yml"
+    - name: load configuration file
+      include_vars:
+        file: "{{ directory }}/{{ inventory_hostname }}.yml"
     
     - name : ensure server configuration
       include_role:

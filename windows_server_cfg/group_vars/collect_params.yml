@@ -10,7 +10,7 @@ get_config :
   partitions:
     enabled: true
     filter: DriveType -eq "Fixed" | ? FileSystemLabel -ne "Réservé au système"
-  softwares:
+  packages:
     enabled: true
     filter:  
   firewall:
