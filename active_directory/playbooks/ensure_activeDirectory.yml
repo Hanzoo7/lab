@@ -9,9 +9,8 @@
 
   vars_files:
     - ../vaults/windows_ensure
-  #  - ../files/adds.yml
+    - ../files/adds.yml
 
   tasks:
-    - name : ensure active directory
-      include_role:
+    - include_role:
         name: ad_config

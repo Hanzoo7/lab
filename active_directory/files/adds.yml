@@ -1,12 +1,10 @@
 domain:
-  Name: devopslab
-  NetBIOSName: DEVOPSLAB
-  DNSRoot: devopslab.org
-  DomainMode: Windows2016Domain
-  ReplicaDirectoryServers:
+  dns_domain_name: devopslab.org
+  domain_netbios_name: DEVOPSLAB
+  domain_controllers:
     - W2019-1.devopslab.org
-  DatabasePath: C:\Windows\NTDS
-  SysvolPath: C:\Windows\SYSVOL
+  database_path: C:\Windows\NTDS
+  sysvol_path: C:\Windows\SYSVOL
   fsmo:
     PDCEmulator: W2019-1.devopslab.org
     DomainNamingMaster: W2019-1.devopslab.org
@@ -38,6 +36,8 @@ groups:
         ObjectClass: foreignSecurityPrincipal
       - Name: S-1-5-4
         ObjectClass: foreignSecurityPrincipal
+      - Name: devopsadmin
+        ObjectClass: user
   - CN: Invités
     DistinguishedName: CN=Invités,CN=Builtin,DC=devopslab,DC=org
     GroupCategory: Security
@@ -311,25 +311,31 @@ users:
     PasswordNeverExpires: true
     Description: Compte d’utilisateur d’administration
     EmailAddress: null
-    lastLogon: 08/04/2024 10:41:00
+    lastLogon: 22/05/2024 17:11:49
+    state: present
+    ResetDefaultPassword: null
   - Name: Invité
     DistinguishedName: CN=Invité,CN=Users,DC=devopslab,DC=org
     GivenName: null
     Surname: null
-    Enabled: false
+    Enabled: true
     PasswordNeverExpires: true
     Description: Compte d’utilisateur invité
     EmailAddress: null
     lastLogon: 01/01/1601 01:00:00
+    state: present
+    ResetDefaultPassword: null
   - Name: devopsadmin
     DistinguishedName: CN=devopsadmin,CN=Users,DC=devopslab,DC=org
-    GivenName: null
-    Surname: null
+    GivenName: devops
+    Surname: admin
     Enabled: true
     PasswordNeverExpires: true
     Description: null
     EmailAddress: null
-    lastLogon: 21/05/2024 17:48:15
+    lastLogon: 22/05/2024 17:14:47
+    state: present
+    ResetDefaultPassword: null
   - Name: krbtgt
     DistinguishedName: CN=krbtgt,CN=Users,DC=devopslab,DC=org
     GivenName: null
@@ -339,6 +345,19 @@ users:
     Description: Compte de service du centre de distribution de clés
     EmailAddress: null
     lastLogon: 01/01/1601 01:00:00
+    state: present
+    ResetDefaultPassword: null
+  - Name: TestAdmin
+    DistinguishedName: CN=TestAdmin,CN=Users,DC=devopslab,DC=org
+    GivenName: test
+    Surname: admin
+    Enabled: true
+    PasswordNeverExpires: false
+    Description: null
+    EmailAddress: null
+    lastLogon: 01/01/1601 01:00:00
+    state: present
+    ResetDefaultPassword: null
 computers:
   Name: W2019-1
   DistinguishedName: CN=W2019-1,OU=Domain Controllers,DC=devopslab,DC=org
